@@ -52,7 +52,7 @@ export default function Footer() {
               <div className="w-12 h-12 bg-[#39FF14] rounded-md flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(57,255,20,0.6)]">
                 <span className="text-black font-bold text-4xl">A</span>
               </div>
-              <h3 className="text-white text-2xl font-bold">Ahil</h3>
+              <h3 className="text-white text-2xl font-bold">Maz</h3>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Strategically crafted websites with persuasive copy and seamless
@@ -128,7 +128,7 @@ export default function Footer() {
             {/* Contact */}
             <div className="space-y-3 mt-5">
               <ContactInfo icon={Phone} text="+92 03432357017" />
-              <ContactInfo icon={Mail} text="ahilranaconsulting@gmail.com" />
+              <ContactInfo icon={Mail} text="Mazranaconsulting@gmail.com" />
               <ContactInfo icon={MapPin} text="Karachi, Pakistan" />
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Footer() {
         <div className="border-t border-gray-800/50 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()}{" "}
-            <span className="text-[#39FF14]">Ahil</span>. All rights reserved.
+            <span className="text-[#39FF14]">Maz</span>. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
             <FooterBottomLink text="Privacy Policy" />

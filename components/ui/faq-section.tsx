@@ -11,7 +11,7 @@ export default function FAQSection() {
         <Accordion type="single" collapsible className="space-y-4">
           <AccordionItem value="item-1" className="border-0">
             <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">Why Choose Ahill</span>
+              <span className="text-lg">Why Choose Mazl</span>
             </AccordionTrigger>
             <AccordionContent className="px-6 py-4 text-white">We deliver high-quality, custom websites that are fast, secure, and conversion-focused. With expert development, SEO optimization, ongoing support, and a 100% Money-Back Guarantee, we ensure your business stands out online. Let’s build something amazing! </AccordionContent>
           </AccordionItem>
@@ -20,9 +20,9 @@ export default function FAQSection() {
 
           <AccordionItem value="item-2" className="border-0">
             <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">Who Behind Ahil</span>
+              <span className="text-lg">Who Behind Maz</span>
             </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-white">  A team of expert developers and designers led by Ahil Rana, building fast, secure, and high-converting websites for your business success. 🚀</AccordionContent>
+            <AccordionContent className="px-6 py-4 text-white">  A team of expert developers and designers led by Maz Rana, building fast, secure, and high-converting websites for your business success. 🚀</AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-2" className="border-0">

@@ -225,7 +225,7 @@ export default function Home() {
             className="flex items-center gap-2 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
           >
             <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-[#00ff59]" />
-            <span className="text-white font-extrabold text-lg sm:text-xl lg:text-2xl">AHIL</span>
+            <span className="text-white font-extrabold text-lg sm:text-xl lg:text-2xl">Maz</span>
           </Link>
 
           <div className="hidden md:flex flex-1 justify-end">

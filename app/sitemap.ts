@@ -4,7 +4,7 @@ import { MetadataRoute } from "next";
 export const revalidate = 0; // 🚀 ensures fresh fetch on every request
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ahilwebstudio.vercel.app";
+  const baseUrl = "https://Mazwebstudio.vercel.app";
 
   return [
     {

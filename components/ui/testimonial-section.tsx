@@ -45,7 +45,7 @@ export default function TestimonialSection() {
       name: "James Walker",
       position: "Founder, Tech Solutions",
       quote:
-        "Ahil's expertise in web development transformed our online presence. The website is fast, responsive, and visually stunning!",
+        "Maz's expertise in web development transformed our online presence. The website is fast, responsive, and visually stunning!",
       initial: "J",
       image: "/Assets/Reviews/user1.jpeg",
     },
@@ -53,7 +53,7 @@ export default function TestimonialSection() {
       name: "Sophia Martinez",
       position: "CEO, Digital Wave",
       quote:
-        "Ahil delivered an outstanding website. The UI/UX is flawless, and our customers love the seamless experience.",
+        "Maz delivered an outstanding website. The UI/UX is flawless, and our customers love the seamless experience.",
       initial: "S",
       image: "/Assets/Reviews/user2.png",
     },
@@ -61,7 +61,7 @@ export default function TestimonialSection() {
       name: "Liam Anderson",
       position: "Freelancer",
       quote:
-        "My portfolio website turned out exactly how I wanted. Ahil’s skills in React and Next.js are top-notch!",
+        "My portfolio website turned out exactly how I wanted. Maz’s skills in React and Next.js are top-notch!",
       initial: "L",
       image: "/Assets/Reviews/user3.jpeg",
     },
@@ -69,7 +69,7 @@ export default function TestimonialSection() {
       name: "Emma Johansson",
       position: "Founder, Creative Minds",
       quote:
-        "Working with Ahil was a pleasure. He understood our vision and delivered a beautiful, functional website on time!",
+        "Working with Maz was a pleasure. He understood our vision and delivered a beautiful, functional website on time!",
       initial: "E",
       image: "/Assets/Reviews/user4.jpeg",
     },
@@ -77,7 +77,7 @@ export default function TestimonialSection() {
       name: "Noah Williams",
       position: "Marketing Head, Visionary Media",
       quote:
-        "Ahil built a lightning-fast, SEO-friendly website for us. His expertise in modern web technologies is impressive!",
+        "Maz built a lightning-fast, SEO-friendly website for us. His expertise in modern web technologies is impressive!",
       initial: "N",
       image: "/Assets/Reviews/user5.jpeg",
     },
@@ -85,7 +85,7 @@ export default function TestimonialSection() {
       name: "Olivia Brown",
       position: "Owner, Art Boutique",
       quote:
-        "Ahil delivered beyond our expectations! Our e-commerce store now runs smoothly and looks stunning.",
+        "Maz delivered beyond our expectations! Our e-commerce store now runs smoothly and looks stunning.",
       initial: "O",
       image: "/Assets/Reviews/user6.jpeg",
     },
@@ -93,7 +93,7 @@ export default function TestimonialSection() {
       name: "Ethan Carter",
       position: "Founder, CodeNest",
       quote:
-        "From UI design to backend logic, Ahil nailed every aspect of our website. Highly recommended!",
+        "From UI design to backend logic, Maz nailed every aspect of our website. Highly recommended!",
       initial: "E",
       image: "/Assets/Reviews/user1.jpeg",
     },
@@ -101,7 +101,7 @@ export default function TestimonialSection() {
       name: "Mia Schmidt",
       position: "Blogger & Influencer",
       quote:
-        "My blog's performance and aesthetics improved drastically thanks to Ahil’s incredible web development skills!",
+        "My blog's performance and aesthetics improved drastically thanks to Maz’s incredible web development skills!",
       initial: "M",
       image: "/Assets/Reviews/user10.jpeg",
     },
@@ -109,7 +109,7 @@ export default function TestimonialSection() {
       name: "Benjamin Hughes",
       position: "CEO, InnovateTech",
       quote:
-        "Ahil is an absolute professional. He transformed our outdated website into a sleek, modern, and fast platform.",
+        "Maz is an absolute professional. He transformed our outdated website into a sleek, modern, and fast platform.",
       initial: "B",
       image: "/Assets/Reviews/user9.png",
     },
@@ -117,7 +117,7 @@ export default function TestimonialSection() {
       name: "Charlotte Dupont",
       position: "Founder, Style & Trends",
       quote:
-        "Thanks to Ahil, my fashion website is now more engaging and user-friendly. His attention to detail is remarkable!",
+        "Thanks to Maz, my fashion website is now more engaging and user-friendly. His attention to detail is remarkable!",
       initial: "C",
       image: "/Assets/Reviews/user4.jpeg",
     }
