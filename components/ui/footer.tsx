@@ -50,15 +50,12 @@ export default function Footer() {
           <div className="lg:col-span-5 bg-gradient-to-br from-black/60 to-[#0c1f0c]/30 p-6 rounded-xl border border-gray-800/50 shadow-xl backdrop-blur-sm">
             <div className="flex items-center mb-5">
               <div className="w-12 h-12 bg-[#39FF14] rounded-md flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(57,255,20,0.6)]">
-                <span className="text-black font-bold text-4xl">A</span>
+                <span className="text-black font-bold text-4xl">M</span>
               </div>
-              <h3 className="text-white text-2xl font-bold">Maz</h3>
+              <h3 className="text-white text-2xl font-bold"> Maz Digital</h3>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Strategically crafted websites with persuasive copy and seamless
-              development designed to convert visitors into loyal customers.
-              Helping brands worldwide maximize growth, boost sales, and create
-              lasting impact.
+         Professional video editing, web development, and graphic design for creators and brands worldwide.
             </p>
 
             {/* Achievements */}
@@ -95,15 +92,14 @@ export default function Footer() {
 
           {/* Services */}
           <div className="lg:col-span-3 bg-gradient-to-br from-black/60 to-[#0c1f0c]/30 p-6 rounded-xl border border-gray-800/50 shadow-xl backdrop-blur-sm">
-            <h3 className="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-800 inline-block">
+            <h2 className="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-800 inline-block">
               <span className="text-[#39FF14]">Our</span> Services
-            </h3>
+            </h2>
             <div className="space-y-3">
-              <FooterLink href="#" text="Custom Website" />
-              <FooterLink href="#" text="Portfolio Website" />
-              <FooterLink href="#" text="Redesign Website" />
-              <FooterLink href="#" text="Business Website" />
-              <FooterLink href="#" text="E-commerce Website" />
+              <FooterLink href="#" text="Video Editing" />
+              <FooterLink href="#" text="Web Development" />
+              <FooterLink href="#" text="Graphic Design" />
+            
             </div>
           </div>
 
@@ -116,7 +112,7 @@ export default function Footer() {
 
             {/* CTA Button */}
             <a
-              href="https://wa.me/+9203432357017?text=Hi,%20I’d%20like%20to%20book%20a%20free%20consultation!"
+              href="https://wa.me/+923055544729?text=Hi,%20I’d%20like%20to%20book%20a%20free%20consultation!"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-between bg-[#39FF14] hover:bg-[#2cff0f] text-black font-semibold rounded-md px-5 py-3 transition-all duration-300 w-full mb-6 shadow-[0_0_20px_rgba(57,255,20,0.6)] hover:shadow-[0_0_25px_rgba(57,255,20,0.8)]"
@@ -127,8 +123,8 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="space-y-3 mt-5">
-              <ContactInfo icon={Phone} text="+92 03432357017" />
-              <ContactInfo icon={Mail} text="Mazranaconsulting@gmail.com" />
+              <ContactInfo icon={Phone} text="+92 0305 5544729" />
+              <ContactInfo icon={Mail} text=" malik@mazdigital.me" />
               <ContactInfo icon={MapPin} text="Karachi, Pakistan" />
             </div>
           </div>
@@ -137,8 +133,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/50 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()}{" "}
-            <span className="text-[#39FF14]">Maz</span>. All rights reserved.
+            © Copyright {new Date().getFullYear()}{" "}
+             
+
+            <span className="text-[#39FF14]">Maz Digital.</span> All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
             <FooterBottomLink text="Privacy Policy" />
