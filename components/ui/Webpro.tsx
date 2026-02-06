@@ -27,6 +27,7 @@ export default function EcommerceLandingPage() {
         alt="Padra Clinic Website Preview"
         className="w-full h-full object-cover rounded-5xl transition-transform duration-300 hover:scale-110"
         priority
+        unoptimized
       />
     </div>
 
@@ -120,6 +121,7 @@ export default function EcommerceLandingPage() {
         alt="PTD Fitness Case Study"
         className="w-full h-full object-cover rounded-5xl transition-transform duration-300 hover:scale-110"
         priority
+        unoptimized
       />
     </div>
 
@@ -210,6 +212,7 @@ export default function EcommerceLandingPage() {
         alt="Law Firm Case Study"
         className="w-full h-full object-cover rounded-5xl transition-transform duration-300 hover:scale-110"
         priority
+        unoptimized
       />
     </div>
 

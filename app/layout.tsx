@@ -8,54 +8,74 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Maz Digital Agency | Full Stack Developer & Next.js Expert for Global Businesses",
+  title:
+    "Maz Digital Agency | High-Converting Video, Design & Web Solutions for Brands",
+
   description:
-    "Maz Digital Agency builds fast, SEO optimized, and high-converting websites using Next.js and React. Helping startups, agencies, and professionals grow their online presence worldwide.",
+    "Maz Digital Agency helps brands, creators, and agencies grow with high-performing video editing, graphic design, thumbnails, and conversion-focused websites. Trusted by global clients for premium digital execution.",
+
   keywords: [
-    "Full Stack Developer",
-    "Next.js Expert",
-    "React Developer",
-    "Web Design Agency",
-    "SEO Optimized Websites",
-    "Freelance Web Developer",
+    "Digital Agency",
+    "Video Editing Agency",
+    "Influencer Marketing Agency",
+    "Graphic Design Services",
+    "Thumbnail Design",
+    "Website Development Agency",
+    "Next.js Agency",
+    "Creative Agency for Brands",
+    "Content Growth Agency",
+    "Social Media Content Agency",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical: "https://maz-agency.vercel.app/",
   },
+
   openGraph: {
-    title: "Maz Digital Agency | Full Stack Developer & Next.js Expert",
+    title:
+      "Maz Digital Agency | We Turn Content Into Growth for Brands & Creators",
+
     description:
-      "Explore Maz’s professional portfolio – Full Stack Developer and Next.js Expert helping brands grow with modern web solutions.",
+      "Premium video editing, design, and high-converting websites built for brands that want attention, authority, and growth — without managing freelancers.",
+
     url: "https://maz-agency.vercel.app/",
     siteName: "Maz Digital Agency",
     locale: "en_US",
     type: "website",
+
     images: [
       {
-        url: "https://maz-agency.vercel.app//og-image.jpg",
+        url: "https://maz-agency.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Maz Digital Agency Portfolio Banner",
+        alt: "Maz Digital Agency – Premium Creative & Web Solutions",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Maz Digital Agency | Full Stack Developer & Next.js Expert",
+    title:
+      "Maz Digital Agency | High-Converting Creative & Web Agency",
+
     description:
-      "Maz builds modern, SEO-optimized websites using Next.js and React for global businesses.",
-    images: ["https://maz-agency.vercel.app//og-image.jpg"],
+      "We help brands grow with scroll-stopping content, premium design, and websites that convert visitors into clients.",
+
+    images: ["https://maz-agency.vercel.app/og-image.jpg"],
   },
+
   icons: {
     icon: "/Assets/LOGO.png",
   },
-  // ✅ Google Site Verification Tag Added
+
   other: {
-    "google-site-verification": "DOuHYzCAHl3lOkz1Y8nLhneoLH53VIfCgZlOyLkUyX0",
+    "google-site-verification":
+      "DOuHYzCAHl3lOkz1Y8nLhneoLH53VIfCgZlOyLkUyX0",
   },
 };
 
@@ -69,6 +89,9 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <SpeedInsights />
+
+        {/* Optional Live Chat / Support Widget */}
+        {/* 
         <Script
           id="kommunicate-script"
           strategy="afterInteractive"
@@ -85,8 +108,8 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
       </body>
     </html>
   );
 }
-
