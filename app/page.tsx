@@ -1,7 +1,7 @@
 import Hero from "../components/ui/Hero"
 import Client  from "../components/ui/clientlogo"
 import Yotubeclient  from "../components/ui/youtuberclient"
-import Youtubeclient from "../components/ui/PortfolioYT"
+import Videoportfolio from "../components/ui/PortfolioYT"
 import Thumbnailslider from "../components/ui/thumnailslider"
 import WebSliderf from "../components/ui/webslider"
 import Webpro from "../components/ui/Webpro"
@@ -21,7 +21,7 @@ export default function Home() {
       <Hero />
       <Client/>
       <Yotubeclient/>
-      <Youtubeclient/>
+      <Videoportfolio/>
       <Thumbnailslider/>
       <WebSliderf/>
       <Webpro/>

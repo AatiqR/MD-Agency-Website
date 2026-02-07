@@ -143,15 +143,18 @@ const MouseFollower = () => {
 }
 
 const avatars = [
-"/Assets/client/11.png",
-"/Assets/client/14.jpg",
-"/Assets/client/22.png",
-"/Assets/client/2.png",
-"/Assets/client/34.jpg",
+"/Assets/client/17.png",
+"/Assets/client/37.png",
+"/Assets/Youtuberclient/6.jpg",
 "/Assets/client/3.jpg",
+"/Assets/Youtuberclient/16.jpg",
+"/Assets/client/44.png",
+"/Assets/Youtuberclient/17.jpg",
 "/Assets/client/20.png",
-"/Assets/client/10.png",
-"/Assets/client/28.png",
+"/Assets/Youtuberclient/14.jpg",
+"/Assets/client/12.png",
+"/Assets/Youtuberclient/15.jpg",
+
 ];
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -316,6 +319,7 @@ export default function Home() {
         )}
       </nav>
 
+{/* HERO Section */}
       <main className="pt-24 sm:pt-28 md:pt-32 lg:pt-36 px-5 sm:px-6 md:px-8">
         <div className="mx-auto max-w-7xl relative">
           <div className="absolute -left-5 sm:-left-10 top-8 sm:top-16 md:top-20">
@@ -341,7 +345,7 @@ export default function Home() {
               <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-3 md:h-3 bg-[#00ff59] rounded-full absolute animate-pulse right-1/4 bottom-1/4 opacity-50"></div>
             </div>
 
-            <h1 className="text-[2.5rem] leading-[1.08] sm:text-5xl sm:leading-[1.1] md:text-6xl lg:text-7xl xl:text-8xl font-black max-w-[90%] sm:max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto relative z-10 text-white tracking-tight">
+            {/* <h1 className="text-[2.5rem] leading-[1.08] sm:text-5xl sm:leading-[1.1] md:text-6xl lg:text-7xl xl:text-8xl font-black max-w-[90%] sm:max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto relative z-10 text-white tracking-tight"> */}
               {/* I Build{" "}
               <span
                 key={words[index]}
@@ -349,13 +353,20 @@ export default function Home() {
               >
                 {words[index]}
               </span>{" "} */}
-               Turn Your Vision Into Scroll-Stopping Content
-            </h1>
+               {/* Turn Your Vision Into Scroll-Stopping Content
+            </h1> */}
 
+ <h1 className="text-[2.5rem] leading-[1.08] sm:text-5xl sm:leading-[1.1] md:text-6xl lg:text-7xl xl:text-8xl font-black max-w-[90%] sm:max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto relative z-10 text-white tracking-tight">
+              Turn Your Vision Into
+              <span className="text-[#00ff59] inline-block transition-all duration-500 break-words"> Scroll-Stopping </span>{" "}
+              Content
+            </h1>
             <p className="text-gray-200 text-base sm:text-lg md:text-xl lg:text-1xl max-w-[85%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto relative z-10 font-medium leading-relaxed">
  We help creators, brands, and agencies bring their ideas to life through powerful video editing,
 modern web development, and captivating design
             </p>
+
+            
 
          <div className="flex flex-col items-center justify-center pt-2 sm:pt-0 md:pt-0 relative z-10">
   <Button
@@ -383,7 +394,7 @@ modern web development, and captivating design
   className="flex flex-col items-center mb-12 mt-7 text-center px-4 sm:px-6"
 >
   {/* Avatars */}
-  <div className="flex -space-x-2 sm:-space-x-2 md:-space-x-3 mb-4">
+  <div className="flex -space-x-2 sm:-space-x-2 md:-space-x-3 mb-3">
     {avatars.map((avatar, index) => (
       <motion.div
         key={index}
