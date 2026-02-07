@@ -396,10 +396,13 @@ modern web development, and captivating design
                    bg-black/20 backdrop-blur-sm"
       >
         <Image
+             width={200}
+  height={200}
           src={avatar}
           alt={`Trusted user ${index + 1}`}
           className="w-full h-full object-contain"
         />
+          
       </motion.div>
     ))}
   </div>

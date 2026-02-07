@@ -1,5 +1,6 @@
 import Hero from "../components/ui/Hero"
 import Client  from "../components/ui/clientlogo"
+import Youtubeclient from "../components/ui/PortfolioYT"
 import Yotubeclient  from "../components/ui/youtuberclient"
 import Thumbnailslider from "../components/ui/thumnailslider"
 import WebSliderf from "../components/ui/webslider"
@@ -12,7 +13,7 @@ import Faqs from "../components/ui/faq-section"
 import Booking from "../components/ui/booking"
 import Footer from "../components/ui/footer"
 // import Short  from "../components/ui/ShortP"
-import Ytportfolio from "../components/ui/PortfolioYT"
+
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <Hero />
       <Client/>
       <Yotubeclient/>
-      <Ytportfolio/>
+      <Youtubeclient/>
       <Thumbnailslider/>
       <WebSliderf/>
       <Webpro/>

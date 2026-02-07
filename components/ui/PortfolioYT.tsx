@@ -154,6 +154,8 @@ const HelpSection = () => {
         ) : (
           <>
             <Image
+              width={100}
+  height={100}
               src={video.thumbnail}
               alt={video.title ?? "Video thumbnail"}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

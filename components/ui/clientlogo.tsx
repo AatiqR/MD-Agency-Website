@@ -27,7 +27,7 @@ const companies = [
   { name: "Launchify", logo: "/Assets/client/13.png", height: 80, width: 160 },
   { name: "VisionLoop", logo: "/Assets/client/17.png", height: 70, width: 140 },
   { name: "Orbitix", logo: "/Assets/client/42.png", height: 70, width: 140 },
-  { name: "SparkNova", logo: "/Assets/client/51.png", height: 80, width: 160 },
+
   { name: "HexaCloud", logo: "/Assets/client/33.png", height: 70, width: 140 },
   { name: "QuickStack", logo: "/Assets/client/28.png", height: 70, width: 140 },
   { name: "BrightForge", logo: "/Assets/client/20.png", height: 70, width: 140 },
