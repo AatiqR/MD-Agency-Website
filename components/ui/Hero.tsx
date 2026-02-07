@@ -341,19 +341,19 @@ export default function Home() {
             </div>
 
             <h1 className="text-[2.5rem] leading-[1.08] sm:text-5xl sm:leading-[1.1] md:text-6xl lg:text-7xl xl:text-8xl font-black max-w-[90%] sm:max-w-lg md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto relative z-10 text-white tracking-tight">
-              I Build{" "}
+              {/* I Build{" "}
               <span
                 key={words[index]}
                 className="text-[#00ff59] inline-block transition-all duration-500 break-words"
               >
                 {words[index]}
-              </span>{" "}
-              Websites That Drive Business Growth.
+              </span>{" "} */}
+               Turn Your Vision Into Scroll-Stopping Content
             </h1>
 
             <p className="text-gray-200 text-base sm:text-lg md:text-xl lg:text-1xl max-w-[85%] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto relative z-10 font-medium leading-relaxed">
-              {/* Helping coaches, law firms, doctors, and startups grow with fast, modern SEO-ready websites. */}
-              Helping coaches, law firms or lawyers, doctors, Agency and Businesses consistently generate qualified leads and close more clients with fast, modern, SEO ready websites.
+ We help creators, brands, and agencies bring their ideas to life through powerful video editing,
+modern web development, and captivating design
             </p>
 
          <div className="flex flex-col items-center justify-center pt-2 sm:pt-0 md:pt-0 relative z-10">
@@ -422,43 +422,79 @@ export default function Home() {
     ))}
 
     <span className="text-gray-300 text-sm sm:text-base font-semibold tracking-wide">
-      <span className="text-[#39FF14] font-extrabold">Trusted</span> by 100+ businesses, professionals & brands worldwide
+      <span className="text-[#39FF14] font-extrabold">Trusted</span> by 1000+  Creators, businesses, & brands worldwide
     </span>
   </div>
 
+
   {/* Tagline */}
-  <p className="mt-3 text-xs sm:text-sm md:text-base text-gray-400 font-medium max-w-xs sm:max-w-md">
-    Partnering with{" "}
-    <span className="text-[#39FF14] font-semibold">law firms</span>,{" "}
-    <span className="text-[#39FF14] font-semibold">medical experts</span>,{" "}
-    <span className="text-[#39FF14] font-semibold">businesses</span>,{" "}
-    <span className="text-[#39FF14] font-semibold">coaches</span>, and{" "}
-    <span className="text-[#39FF14] font-semibold">brands</span> to build{" "}
-    <span className="text-white font-semibold">high-performing websites</span> that attract clients, build trust & drive business growth 🚀
+  <p className="mt-3 text-xs sm:text-sm md:text-base text-white font-medium max-w-xs sm:max-w-md">
+    We help creators, {" "}
+    <span className="text-[#39FF14] font-semibold">brands</span>,{" "}
+    <span className="text-[#39FF14] font-semibold">agencies</span>,{" "}
+    <span className="text-[#39FF14] font-semibold">businesses</span>,{" "} scale with high-quality 
+    <span className="text-[#39FF14] font-semibold"> video editing</span>,{" "}
+    <span className="text-[#39FF14] font-semibold">web development</span> {" "}
+    <span className="text-white font-semibold">and
+design solutions, delivered fast, clean, and stress free.
+</span> 
   </p>
 </motion.div>
 
 
-      <div className="relative w-full mt-12 sm:mt-20 md:mt-24 lg:mt-18 z-30">
-        <div className="relative h-14 sm:h-14 md:h-16 lg:h-20 bg-[#39FF14] transform -skew-y-2 shadow-[0_0_30px_rgba(0,255,89,0.6)]" style={{ width: '100vw' }}>
-          <div className="flex items-center h-full animate-[marquee_25s_linear_infinite] skew-y-2">
-            <div className="flex items-center gap-8 sm:gap-8 md:gap-10 lg:gap-12 whitespace-nowrap px-6 sm:px-6 md:px-8">
-              {[...Array(20)].map((_, i) => (
-                <div key={i} className="flex items-center gap-8 sm:gap-8 md:gap-10 lg:gap-12">
-                  <span className="text-black font-black text-base sm:text-base md:text-lg lg:text-xl uppercase tracking-wider">More Clients</span>
-                  <div className="w-2.5 h-2.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-black transform rotate-45"></div>
-                  <span className="text-black font-black text-base sm:text-base md:text-lg lg:text-xl uppercase tracking-wider">High-Quality Leads</span>
-                  <div className="w-2.5 h-2.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-black transform rotate-45"></div>
-                  <span className="text-black font-black text-base sm:text-base md:text-lg lg:text-xl uppercase tracking-wider">Sales Growth</span>
-                  <div className="w-2.5 h-2.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-black transform rotate-45"></div>
-                  <span className="text-black font-black text-base sm:text-base md:text-lg lg:text-xl uppercase tracking-wider">Revenue Boost</span>
-                  <div className="w-2.5 h-2.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 bg-black transform rotate-45"></div>
-                </div>
-              ))}
+  <div className="relative w-full mt-20 sm:mt-20 md:mt-24 z-30 ">
+
+  {/* Strip 1 – Left ➜ Right */}
+  <div className="absolute left-1/2 top-1/2 w-[120vw] -translate-x-1/2 -translate-y-1/2 rotate-[-12deg]">
+    <div className="h-14 sm:h-14 md:h-16 lg:h-20 bg-[#39FF14] shadow-[0_0_30px_rgba(0,255,89,0.6)]">
+      <div className="flex items-center h-full animate-[marquee-left_15s_linear_infinite]">
+        <div className="flex items-center gap-10 whitespace-nowrap px-8">
+          {[...Array(20)].map((_, i) => (
+            <div key={i} className="flex items-center gap-10">
+              <span className="text-black font-black text-lg uppercase tracking-wider">Scroll stopping</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">High Quality Leads</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">Sales Growth</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">Website That sell</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+
             </div>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
+  </div>
+
+  {/* Strip 2 – Right ➜ Left */}
+  <div className="absolute left-1/2 top-1/2 w-[120vw] -translate-x-1/2 -translate-y-1/2 rotate-[12deg]">
+    <div className="h-14 sm:h-14 md:h-16 lg:h-20 bg-[#39FF14] shadow-[0_0_30px_rgba(0,255,89,0.6)]">
+      <div className="flex items-center h-full animate-[marquee-right_15s_linear_infinite]">
+        <div className="flex items-center gap-10 whitespace-nowrap px-8">
+          {[...Array(20)].map((_, i) => (
+            <div key={i} className="flex items-center gap-10">
+              <span className="text-black font-black text-lg uppercase tracking-wider">Higher Watch Time</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">More Views Fast</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">Click Magnet Thumbnail</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+               <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">High Retention Cuts</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+              <span className="text-black font-black text-lg uppercase tracking-wider">Scroll stopping</span>
+              <div className="w-3 h-3 bg-black rotate-45" />
+
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 
 <div className="relative w-full h-72 sm:h-80 md:h-96 lg:h-[15rem] overflow-hidden mt-6 sm:mt-8 md:mt-12 mb-16 sm:mb-20 md:mb-24">

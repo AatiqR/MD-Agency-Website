@@ -1,13 +1,37 @@
 "use client"
-
 const portfolioImages = [
-  { id: 1, src: "/Assets/Thumbnail/t1.jpg", alt: "Viral Editing Style" },
-  { id: 2, src: "/Assets/Thumbnail/t2.jpg", alt: "Go Viral Everytime" },
-  { id: 3, src: "/Assets/Thumbnail/t3.jpg", alt: "Angel vs Devil" },
-  { id: 4, src: "/Assets/Thumbnail/t4.jpg", alt: "College vs Dropout" },
-  { id: 5, src: "/Assets/Thumbnail/t5.jpg", alt: "CapCut Master" },
-  { id: 6, src: "/Assets/Thumbnail/t6.jpg", alt: "Neon Sign Effect" },
+  { id: 1, src: "/Assets/Thumbnail/1.jpg", alt: "Portfolio Thumbnail Image 1" },
+  { id: 2, src: "/Assets/Thumbnail/2.jfif", alt: "Portfolio Thumbnail Image 2" },
+  { id: 3, src: "/Assets/Thumbnail/3.jpg", alt: "Portfolio Thumbnail Image 3" },
+  { id: 4, src: "/Assets/Thumbnail/4.jpg", alt: "Portfolio Thumbnail Image 4" },
+  { id: 5, src: "/Assets/Thumbnail/5.jpg", alt: "Portfolio Thumbnail Image 5" },
+  { id: 6, src: "/Assets/Thumbnail/6.jpg", alt: "Portfolio Thumbnail Image 6" },
+  { id: 7, src: "/Assets/Thumbnail/7.jpeg", alt: "Portfolio Thumbnail Image 7" },
+  { id: 8, src: "/Assets/Thumbnail/8.jpg", alt: "Portfolio Thumbnail Image 8" },
+  { id: 9, src: "/Assets/Thumbnail/9.jpg", alt: "Portfolio Thumbnail Image 9" },
+  { id: 10, src: "/Assets/Thumbnail/10.jfif", alt: "Portfolio Thumbnail Image 10" },
+  { id: 11, src: "/Assets/Thumbnail/11.jpg", alt: "Portfolio Thumbnail Image 11" },
+  { id: 12, src: "/Assets/Thumbnail/12.jpg", alt: "Portfolio Thumbnail Image 12" },
+  { id: 13, src: "/Assets/Thumbnail/13.jpg", alt: "Portfolio Thumbnail Image 13" },
+  { id: 14, src: "/Assets/Thumbnail/14.jpg", alt: "Portfolio Thumbnail Image 14" },
+  { id: 15, src: "/Assets/Thumbnail/15.jfif", alt: "Portfolio Thumbnail Image 15" },
+  { id: 16, src: "/Assets/Thumbnail/16.jpg", alt: "Portfolio Thumbnail Image 16" },
+  { id: 17, src: "/Assets/Thumbnail/17.jpg", alt: "Portfolio Thumbnail Image 17" },
+  { id: 18, src: "/Assets/Thumbnail/18.jpg", alt: "Portfolio Thumbnail Image 18" },
+  { id: 19, src: "/Assets/Thumbnail/19.jpg", alt: "Portfolio Thumbnail Image 19" },
+  { id: 20, src: "/Assets/Thumbnail/20.jpg", alt: "Portfolio Thumbnail Image 20" },
+  { id: 21, src: "/Assets/Thumbnail/21.jpg", alt: "Portfolio Thumbnail Image 21" },
+  { id: 22, src: "/Assets/Thumbnail/22.jpg", alt: "Portfolio Thumbnail Image 22" },
+  { id: 23, src: "/Assets/Thumbnail/23.jpg", alt: "Portfolio Thumbnail Image 23" },
+  { id: 24, src: "/Assets/Thumbnail/24.jpg", alt: "Portfolio Thumbnail Image 24" },
+  { id: 25, src: "/Assets/Thumbnail/25.jpg", alt: "Portfolio Thumbnail Image 25" },
+  { id: 26, src: "/Assets/Thumbnail/26.jpg", alt: "Portfolio Thumbnail Image 26" },
+  { id: 27, src: "/Assets/Thumbnail/27.jpg", alt: "Portfolio Thumbnail Image 27" },
+  { id: 28, src: "/Assets/Thumbnail/28.jpg", alt: "Portfolio Thumbnail Image 28" },
+  { id: 29, src: "/Assets/Thumbnail/29.jpeg", alt: "Portfolio Thumbnail Image 29" },
+  { id: 30, src: "/Assets/Thumbnail/30.jpg", alt: "Portfolio Thumbnail Image 30" },
 ];
+
 
 const FloatingParticles = () => {
   const particles = Array.from({ length: 8 }, (_, i) => ({

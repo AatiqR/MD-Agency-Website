@@ -49,6 +49,7 @@ const companies = [
   { name: "Flowbit", logo: "/Assets/client/9.png", height: 70, width: 140 },
   { name: "BrightShift", logo: "/Assets/client/16.png", height: 70, width: 140 },
   { name: "InnoCraft", logo: "/Assets/client/25.png", height: 80, width: 160 },
+  { name: "InnoCraft", logo: "/Assets/client/17.webp", height: 80, width: 160 },
 ];
 
 
