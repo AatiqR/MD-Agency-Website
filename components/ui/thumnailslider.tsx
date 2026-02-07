@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 const portfolioImages = [
   { id: 1, src: "/Assets/Thumbnail/1.jpg", alt: "Portfolio Thumbnail Image 1" },
   { id: 2, src: "/Assets/Thumbnail/2.jfif", alt: "Portfolio Thumbnail Image 2" },
@@ -32,7 +33,12 @@ const portfolioImages = [
   { id: 30, src: "/Assets/Thumbnail/30.jpg", alt: "Portfolio Thumbnail Image 30" },
 ];
 
+/* split images into 3 different rows */
+const row1Images = portfolioImages.filter((_, i) => i % 3 === 0);
+const row2Images = portfolioImages.filter((_, i) => i % 3 === 1);
+const row3Images = portfolioImages.filter((_, i) => i % 3 === 2);
 
+/* floating background particles */
 const FloatingParticles = () => {
   const particles = Array.from({ length: 8 }, (_, i) => ({
     id: i,
@@ -65,15 +71,23 @@ const FloatingParticles = () => {
   );
 };
 
-const MarqueeRow = ({ direction }: { direction: "left" | "right" }) => {
-  const animationClass = direction === "left" 
-    ? "animate-marquee-left-slow"
-    : "animate-marquee-right-slow";
+/* marquee row */
+const MarqueeRow = ({
+  direction,
+  images,
+}: {
+  direction: "left" | "right";
+  images: typeof portfolioImages;
+}) => {
+  const animationClass =
+    direction === "left"
+      ? "animate-marquee-left-slow"
+      : "animate-marquee-right-slow";
 
   return (
     <div className="relative overflow-hidden py-1.5">
       <div className={`flex gap-3 ${animationClass}`} style={{ width: "fit-content" }}>
-        {[...portfolioImages, ...portfolioImages].map((image, index) => (
+        {[...images, ...images].map((image, index) => (
           <div
             key={`${image.id}-${index}`}
             className="relative flex-shrink-0 w-52 sm:w-60 md:w-68 lg:w-76 aspect-video rounded-xl overflow-hidden"
@@ -100,68 +114,53 @@ const FeaturedWork = () => {
       className="relative w-full py-16 md:py-20 overflow-hidden"
       style={{ backgroundColor: "#000000" }}
     >
-      {/* Ambient glow near content */}
+      {/* glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(0, 255, 89, 0.04) 0%, transparent 70%)",
+          background:
+            "radial-gradient(circle, rgba(0, 255, 89, 0.04) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
 
-      {/* Floating particles */}
       <FloatingParticles />
 
-      {/* Content */}
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12 md:mb-16">
+        <div className="max-w-7xl mx-auto px-4 text-center mb-14">
           <h2
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-4 uppercase"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-4"
             style={{
               color: "#ffffff",
-              textShadow: "0 0 80px rgba(0, 255, 89, 0.5), 0 0 120px rgba(0, 255, 89, 0.3), 0 0 160px rgba(0, 255, 89, 0.2)",
-              letterSpacing: "-0.02em",
+              textShadow:
+                "0 0 80px rgba(0,255,89,.5), 0 0 120px rgba(0,255,89,.3)",
             }}
           >
             Featured Work
           </h2>
-          <p className="text-neutral-500 text-sm sm:text-base md:text-lg max-w-md mx-auto mb-6 font-light tracking-wide">
+          <p className="text-neutral-500 max-w-md mx-auto">
             Check out some of the projects we have done for our clients.
           </p>
         </div>
 
-        <div className="space-y-3 md:space-y-4 mb-12 md:mb-16">
-          <MarqueeRow direction="left" />
-          <MarqueeRow direction="right" />
-          <MarqueeRow direction="left" />
+        {/* 3 different marquee rows */}
+        <div className="space-y-3 md:space-y-4 mb-14">
+          <MarqueeRow direction="left" images={row1Images} />
+          <MarqueeRow direction="right" images={row2Images} />
+          <MarqueeRow direction="left" images={row3Images} />
         </div>
 
-        <div className="flex justify-center px-4">
+        <div className="flex justify-center">
           <button
-            className="font-medium text-sm sm:text-base px-8 sm:px-10 py-3.5 rounded-full transition-all duration-300 ease-out"
+            className="px-10 py-3.5 rounded-full font-semibold transition-all"
             style={{
               backgroundColor: "#00ff59",
-              color: "#000000",
-              boxShadow: "0 0 50px -5px rgba(0, 255, 89, 0.4), 0 0 80px -10px rgba(0, 255, 89, 0.25)",
+              color: "#000",
+              boxShadow:
+                "0 0 50px -5px rgba(0,255,89,.4), 0 0 80px -10px rgba(0,255,89,.25)",
             }}
           >
-            <span className="flex items-center gap-2 font-semibold">
-              Book a Call
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </span>
+            Book a Call →
           </button>
         </div>
       </div>
