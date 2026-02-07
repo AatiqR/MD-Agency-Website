@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Sparkles, Star, Menu, X } from "lucide-react"
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link"
 
@@ -394,7 +395,7 @@ modern web development, and captivating design
                    hover:shadow-[0_0_20px_rgba(57,255,20,0.6)] transition-all duration-300 
                    bg-black/20 backdrop-blur-sm"
       >
-        <img
+        <Image
           src={avatar}
           alt={`Trusted user ${index + 1}`}
           className="w-full h-full object-contain"

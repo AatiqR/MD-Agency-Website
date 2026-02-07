@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { Play, ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 const HelpSection = () => {
   const ref = useRef(null);
@@ -150,7 +151,7 @@ const youtubeVideos = [
           />
         ) : (
           <>
-            <img
+            <Image
               src={video.thumbnail}
               alt={video.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

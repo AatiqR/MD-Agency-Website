@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 const portfolioImages = [
   { id: 1, src: "/Assets/Thumbnail/1.jpg", alt: "Portfolio Thumbnail Image 1" },
@@ -95,7 +96,7 @@ const MarqueeRow = ({
               boxShadow: "0 12px 40px -12px rgba(0, 255, 89, 0.15)",
             }}
           >
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
               className="w-full h-full object-cover"

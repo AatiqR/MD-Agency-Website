@@ -6,7 +6,7 @@ import { EmblaCarouselType } from 'embla-carousel';
 import { motion, useInView } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 import VideoModal from "./VideoModal"
-
+import Image from "next/image";
 // YouTube Shorts data - replace with your actual video data
 const youtubeShorts = [
    
@@ -134,7 +134,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video, index, onVideoClick }) => 
       >
         {/* Shorts aspect ratio container */}
         <div className="relative aspect-[9/16] overflow-hidden">
-          <img
+          <Image
             src={video.thumbnail}
             alt={video.title}
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"

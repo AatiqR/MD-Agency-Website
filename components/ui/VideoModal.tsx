@@ -11,8 +11,8 @@ interface VideoModalProps {
 
 const VideoModal: React.FC<VideoModalProps> = ({ videoId, title, isOpen, onClose }) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  // const [isPlaying, setIsPlaying] = useState(false);
+  // const [isMuted, setIsMuted] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
@@ -22,8 +22,8 @@ const VideoModal: React.FC<VideoModalProps> = ({ videoId, title, isOpen, onClose
       document.body.style.overflow = 'hidden';
       setIsLoading(true);
       // Reset states when opening
-      setIsPlaying(false);
-      setIsMuted(false);
+      // setIsPlaying(false);
+      // setIsMuted(false);
     } else {
       document.body.style.overflow = 'unset';
     }
