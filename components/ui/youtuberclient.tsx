@@ -35,6 +35,12 @@ const creators = [
     image: "/Assets/Youtuberclient/5.jpg",
     link: "https://youtube.com/@MyNameIsDeya/videos",
   },
+      {
+    name: "Andrew James",
+    followers: "300k subscribers",
+    image: "/Assets/Youtuberclient/16.jpg",
+    link: "https://www.youtube.com/@andrewjmes/videos",
+  },
   {
     name: "Jared Henderson",
     followers: "612K subscribers",
@@ -46,6 +52,12 @@ const creators = [
     followers: "32K subscribers",
     image: "/Assets/Youtuberclient/7.jpg",
     link: "https://youtube.com/@danielpinktv/videos",
+  },
+   {
+    name: "HP Walking Tours",
+    followers: "210K subscribers",
+    image: "/Assets/Youtuberclient/15.jpg",
+    link: "https://www.youtube.com/@HPWalkingTours/videos",
   },
   {
     name: "The Ultimate Discovery",
@@ -60,12 +72,25 @@ const creators = [
     image: "/Assets/Youtuberclient/10.jpg",
     link: "https://youtube.com/@marktilbury/videos",
   },
+  {
+    name: "Nour Art",
+    followers: "230k subscribers",
+    image: "/Assets/Youtuberclient/17.jpg",
+    link: "https://www.youtube.com/@NourArt2/videos",
+  },
    {
     name: "Steve | Call to Leap",
     followers: "470K subscribers",
     image: "/Assets/Youtuberclient/11.jpg",
     link: "https://youtube.com/@CalltoLeap/videos",
   },
+    {
+    name: "Evan Edinger",
+    followers: "1.2M subscribers",
+    image: "/Assets/Youtuberclient/14.jpg",
+    link: "https://www.youtube.com/@evan/videos",
+  },
+   
     {
     name: "Nischa",
     followers: "2M subscribers",
@@ -85,6 +110,10 @@ const creators = [
     image: "/Assets/Youtuberclient/13.jpg",
     link: "https://youtube.com/@SunnyLenarduzzi/videos",
   },
+
+
+
+   
 ];
 
 export default function CreatorSlider() {
