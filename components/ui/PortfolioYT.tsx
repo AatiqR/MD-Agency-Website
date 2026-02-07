@@ -5,60 +5,62 @@ import { Play, ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import Image from "next/image";
 
+/* ✅ Proper video type (fixes `any` error) */
+type Video = {
+  id: string;
+  thumbnail: string;
+  overlayText?: string;
+  title?: string;
+};
+
 const HelpSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
 
-const youtubeVideos = [
+  const youtubeVideos = [
     {
-    id: "0K5ZeNbUGgA",
-    thumbnail: "https://img.youtube.com/vi/0K5ZeNbUGgA/hqdefault.jpg",
-    overlayText: "Sales Funnel",
-  },
-
-  {
-    id: "t18LkEWqai0",
-    thumbnail: "https://img.youtube.com/vi/t18LkEWqai0/hqdefault.jpg",
-    overlayText: " Live A Life Full of HAPPINESS ",
-  },
+      id: "0K5ZeNbUGgA",
+      thumbnail: "https://img.youtube.com/vi/0K5ZeNbUGgA/hqdefault.jpg",
+      overlayText: "Sales Funnel",
+    },
     {
-    id: "lyLEBnUTqJI",
-    thumbnail: "https://img.youtube.com/vi/lyLEBnUTqJI/hqdefault.jpg",
-    overlayText: "21 Life-Changing Books ",
-  },
-  {
-    id: "0BwRauAB6Zc",
-    thumbnail: "https://img.youtube.com/vi/0BwRauAB6Zc/hqdefault.jpg",
-    overlayText: "How to Start Reading Again",
-  },
-   {
-    id: "ZpP2dgREjSU",
-    thumbnail: "https://img.youtube.com/vi/ZpP2dgREjSU/hqdefault.jpg",
-    overlayText: "7 Signs You're Financially Well",
-  },
-  {
-    id: "tpR0Hk7fcpQ",
-    thumbnail: "https://img.youtube.com/vi/tpR0Hk7fcpQ/hqdefault.jpg",
-    overlayText: "3 Weekend Businesses",
-  },
-  {
-    id: "QThz1B8SHmc",
-    thumbnail: "https://img.youtube.com/vi/QThz1B8SHmc/hqdefault.jpg",
-  
-    overlayText: "How To Manage Your Money Like The 1%",
-  },
-{
-  id: "rl9WxD10WLs",
-  thumbnail: "https://img.youtube.com/vi/rl9WxD10WLs/hqdefault.jpg",
-  overlayText: "5 Books for the Self-Learner ",
-},
-  
-];
+      id: "t18LkEWqai0",
+      thumbnail: "https://img.youtube.com/vi/t18LkEWqai0/hqdefault.jpg",
+      overlayText: " Live A Life Full of HAPPINESS ",
+    },
+    {
+      id: "lyLEBnUTqJI",
+      thumbnail: "https://img.youtube.com/vi/lyLEBnUTqJI/hqdefault.jpg",
+      overlayText: "21 Life-Changing Books ",
+    },
+    {
+      id: "0BwRauAB6Zc",
+      thumbnail: "https://img.youtube.com/vi/0BwRauAB6Zc/hqdefault.jpg",
+      overlayText: "How to Start Reading Again",
+    },
+    {
+      id: "ZpP2dgREjSU",
+      thumbnail: "https://img.youtube.com/vi/ZpP2dgREjSU/hqdefault.jpg",
+      overlayText: "7 Signs You're Financially Well",
+    },
+    {
+      id: "tpR0Hk7fcpQ",
+      thumbnail: "https://img.youtube.com/vi/tpR0Hk7fcpQ/hqdefault.jpg",
+      overlayText: "3 Weekend Businesses",
+    },
+    {
+      id: "QThz1B8SHmc",
+      thumbnail: "https://img.youtube.com/vi/QThz1B8SHmc/hqdefault.jpg",
+      overlayText: "How To Manage Your Money Like The 1%",
+    },
+    {
+      id: "rl9WxD10WLs",
+      thumbnail: "https://img.youtube.com/vi/rl9WxD10WLs/hqdefault.jpg",
+      overlayText: "5 Books for the Self-Learner ",
+    },
+  ];
 
-
-
-  // ✅ Short form video data (only IDs)
   const shortFormVideos = [
     {
       id: "MPZ5OHVwU_I",
@@ -119,13 +121,13 @@ const youtubeVideos = [
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
-  // ✅ Video Card Component
+  // ✅ Video Card Component (no `any`)
   const VideoCard = ({
     video,
     aspectRatio = "aspect-video",
     isShortForm = false,
   }: {
-    video: any;
+    video: Video;
     aspectRatio?: string;
     isShortForm?: boolean;
   }) => {
@@ -153,12 +155,11 @@ const youtubeVideos = [
           <>
             <Image
               src={video.thumbnail}
-              alt={video.title}
+              alt={video.title ?? "Video thumbnail"}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
 
-            {/* Play Button */}
             <motion.div
               className="absolute inset-0 flex items-center justify-center"
               whileHover={{ scale: 1.1 }}
@@ -169,10 +170,8 @@ const youtubeVideos = [
               </div>
             </motion.div>
 
-            {/* Video Content Overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-              
-                {!isShortForm && video.overlayText && (
+              {!isShortForm && video.overlayText && (
                 <div className="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-medium inline-block">
                   {video.overlayText}
                 </div>
@@ -226,14 +225,13 @@ const youtubeVideos = [
         </motion.div>
 
         <div className="space-y-16">
-          {/* YouTube Videos Section */}
           <motion.div
             variants={itemVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-black via-black to-black rounded-3xl p-10 md:p-16 shadow-2xl ">
+            <div className="bg-gradient-to-br from-black via-black to-black rounded-3xl p-10 md:p-16 shadow-2xl">
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
                   Talking Head Videos
@@ -242,7 +240,6 @@ const youtubeVideos = [
                   YouTube videos made more engaging than ever for longer watch
                   time and more subscribers.
                 </p>
-                
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
@@ -253,7 +250,6 @@ const youtubeVideos = [
             </div>
           </motion.div>
 
-          {/* Short Form Videos Section */}
           <motion.div
             variants={itemVariants}
             initial="hidden"

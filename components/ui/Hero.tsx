@@ -172,7 +172,7 @@ export default function Home() {
     "Performance Optimized"
   ]
 
-  const [index, setIndex] = useState(0)
+  const [, setIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
