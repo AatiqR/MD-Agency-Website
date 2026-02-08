@@ -67,7 +67,7 @@ const companies = [
   return (
     <div className="w-full h-[200px] bg-black flex flex-col justify-center px-4 md:px-10 overflow-hidden ">
   <div className="mb-6 text-center">
-    <h2 className="text-3xl md:text-5xl font-extrabold text-[#26ff00] mb-2 tracking-tight drop-shadow-[0_0_10px_#39FF14]">
+    <h2 className="text-3xl md:text-5xl font-extrabold text-[#26ff00] mb-2 tracking-tight drop-shadow-[0_0_2px_#39FF14]">
       Our Valued Clients
     </h2>
     <p className="text-sm md:text-base text-gray-300 font-semibold">
@@ -94,13 +94,13 @@ const companies = [
               key={index}
               className="flex-shrink-0 flex items-center justify-center h-24 w-40 md:h-28 md:w-48 transition-transform duration-300 hover:scale-105"
             >
-              <div className="rounded-xl p-2 flex items-center justify-center w-full h-full  hover:shadow-[0_0_20px_#f97316] transition-all duration-300">
+              <div className="rounded-xl p-2 flex items-center justify-center w-full h-full  ">
                 <Image
                   src={company.logo || "/placeholder.svg"}
                   alt={`${company.name} logo`}
                   width={company.width}
                   height={company.height}
-                  className="object-contain max-h-full max-w-full"
+                  className="object-contain max-h-full max-w-full rounded-2xl"
                 />
               </div>
             </div>

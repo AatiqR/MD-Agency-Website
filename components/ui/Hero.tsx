@@ -1,44 +1,46 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import { Button } from "@/components/ui/button"
-import { Sparkles, Star, Menu, X } from "lucide-react"
+import { useState, useEffect, useRef, useCallback, memo } from "react";
+import { Button } from "@/components/ui/button";
+import { Star, Menu, X } from "lucide-react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import Link from "next/link"
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
-const FallingStars = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
+/* =========================
+   Falling Stars (Canvas)
+========================= */
+const FallingStars = memo(() => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
+    const canvas = canvasRef.current;
+    if (!canvas) return;
 
-    const ctx = canvas.getContext("2d")
-    if (!ctx) return
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
 
-    window.addEventListener("resize", handleResize)
-    handleResize()
+    resize();
+    window.addEventListener("resize", resize, { passive: true });
 
     const stars: {
-      x: number
-      y: number
-      size: number
-      speed: number
-      opacity: number
-      tail: { x: number; y: number }[]
-    }[] = []
+      x: number;
+      y: number;
+      size: number;
+      speed: number;
+      opacity: number;
+      tail: { x: number; y: number }[];
+    }[] = [];
 
     const createStars = () => {
-      const maxStars = Math.floor(window.innerWidth / 35)
-
+      const maxStars = Math.floor(window.innerWidth / 35);
       if (stars.length < maxStars && Math.random() < 0.03) {
-        const size = Math.random() * 2 + 1
+        const size = Math.random() * 2 + 1;
         stars.push({
           x: Math.random() * canvas.width,
           y: 0,
@@ -46,278 +48,248 @@ const FallingStars = () => {
           speed: Math.random() * 1 + 0.5,
           opacity: Math.random() * 0.8 + 0.2,
           tail: [],
-        })
+        });
       }
-    }
+    };
 
     const drawStars = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       stars.forEach((star, index) => {
-        star.y += star.speed
+        star.y += star.speed;
 
-        star.tail.push({ x: star.x, y: star.y })
-        if (star.tail.length > 5) {
-          star.tail.shift()
-        }
+        star.tail.push({ x: star.x, y: star.y });
+        if (star.tail.length > 5) star.tail.shift();
 
         if (star.tail.length > 1) {
-          ctx.beginPath()
-          ctx.moveTo(star.tail[0].x, star.tail[0].y)
-
+          ctx.beginPath();
+          ctx.moveTo(star.tail[0].x, star.tail[0].y);
           for (let i = 1; i < star.tail.length; i++) {
-            ctx.lineTo(star.tail[i].x, star.tail[i].y)
+            ctx.lineTo(star.tail[i].x, star.tail[i].y);
           }
-
-          ctx.strokeStyle = `rgba(0, 255, 89, ${star.opacity * 0.5})`
-          ctx.lineWidth = star.size / 2
-          ctx.stroke()
+          ctx.strokeStyle = `rgba(0,255,89,${star.opacity * 0.5})`;
+          ctx.lineWidth = star.size / 2;
+          ctx.stroke();
         }
 
-        ctx.beginPath()
-        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(0, 255, 89, ${star.opacity})`
-        ctx.fill()
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0,255,89,${star.opacity})`;
+        ctx.fill();
 
-        if (star.y > canvas.height) {
-          stars.splice(index, 1)
-        }
-      })
-    }
+        if (star.y > canvas.height) stars.splice(index, 1);
+      });
+    };
 
+    let rafId = 0;
     const animate = () => {
-      createStars()
-      drawStars()
-      requestAnimationFrame(animate)
-    }
-
-    animate()
+      createStars();
+      drawStars();
+      rafId = requestAnimationFrame(animate);
+    };
+    animate();
 
     return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
 
-  return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-10" />
-}
+  return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-10" />;
+});
+FallingStars.displayName = "FallingStars";
 
-const MouseFollower = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [hasHover, setHasHover] = useState(false)
+/* =========================
+   Mouse Follower
+========================= */
+const MouseFollower = memo(() => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
-    setHasHover(window.matchMedia("(hover: hover)").matches)
+    setEnabled(window.matchMedia("(hover: hover)").matches);
+  }, []);
 
-    const updatePosition = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY })
-    }
+  useEffect(() => {
+    if (!enabled) return;
 
-    if (hasHover) {
-      window.addEventListener("mousemove", updatePosition)
-      return () => window.removeEventListener("mousemove", updatePosition)
-    }
-  }, [hasHover])
+    const update = (e: MouseEvent) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
 
-  if (!hasHover) return null
+    window.addEventListener("mousemove", update, { passive: true });
+    return () => window.removeEventListener("mousemove", update);
+  }, [enabled]);
+
+  if (!enabled) return null;
 
   return (
     <>
       <div
-        className="fixed w-8 h-8 rounded-full border-2 border-[#00ff59] pointer-events-none transition-all duration-100 ease-out z-50"
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          transform: "translate(-50%, -50%)",
-        }}
-      ></div>
+        className="fixed w-8 h-8 rounded-full border-2 border-[#00ff59] pointer-events-none z-50 transition-transform duration-100"
+        style={{ left: position.x, top: position.y, transform: "translate(-50%,-50%)" }}
+      />
       <div
-        className="fixed w-2 h-2 bg-[#00ff59] rounded-full pointer-events-none transition-all duration-75 ease-out z-50"
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          transform: "translate(-50%, -50%)",
-        }}
-      ></div>
+        className="fixed w-2 h-2 bg-[#00ff59] rounded-full pointer-events-none z-50 transition-transform duration-75"
+        style={{ left: position.x, top: position.y, transform: "translate(-50%,-50%)" }}
+      />
     </>
-  )
-}
+  );
+});
+MouseFollower.displayName = "MouseFollower";
 
+/* =========================
+   Static Data
+========================= */
 const avatars = [
-"/Assets/client/17.png",
-"/Assets/client/37.png",
-"/Assets/Youtuberclient/6.jpg",
-"/Assets/client/3.jpg",
-"/Assets/Youtuberclient/16.jpg",
-"/Assets/client/44.png",
-"/Assets/Youtuberclient/17.jpg",
-"/Assets/client/20.png",
-"/Assets/Youtuberclient/14.jpg",
-"/Assets/client/12.png",
-"/Assets/Youtuberclient/15.jpg",
-
+  "/Assets/client/17.png",
+  "/Assets/client/37.png",
+  "/Assets/Youtuberclient/6.jpg",
+  "/Assets/client/3.jpg",
+  "/Assets/Youtuberclient/16.jpg",
+  "/Assets/client/44.png",
+  "/Assets/Youtuberclient/17.jpg",
+  "/Assets/client/20.png",
+  "/Assets/Youtuberclient/14.jpg",
+  "/Assets/client/12.png",
+  "/Assets/Youtuberclient/15.jpg",
 ];
+
+const navLinks = [
+  { href: "#Services", label: "Services" },
+  { href: "#CaseStudies", label: "Case Studies" },
+  { href: "#Contact", label: "Contact" },
+  { href: "#Projects", label: "Projects" },
+  { href: "#Reviews", label: "Reviews" },
+];
+
+
+/* =========================
+   Main Component
+========================= */
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const words = [
-    "Lead Generating",
-    "Sales Boosting",
-    "Conversion Focused",
-    "High Converting",
-    "Revenue Generating",
-    "Lead Driving",
-    "SEO Optimized",
-    "Profit Boosting",
-    "Business Growing",
-    "Customer Attracting",
-    "Results Driven",
-    "Brand Enhancing",
-    "Market Dominating",
-    "Performance Optimized"
-  ]
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [, setIndex] = useState(0);
 
-  const [, setIndex] = useState(0)
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen((prev) => !prev);
+  }, []);
+
+  // useEffect(() => {
+  //   const id = setInterval(() => {
+  //     setIndex((prev) => (prev + 1) % words.length);
+  //   }, 2000);
+  //   return () => clearInterval(id);
+  // }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % words.length)
-    }, 2000)
-    return () => clearInterval(interval)
-  }, [words.length])
-
-  useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
-    }
-  }, [mobileMenuOpen])
+    document.body.style.overflow = isMenuOpen ? "hidden" : "unset";
+  }, [isMenuOpen]);
 
   return (
     <div className="min-h-screen bg-black overflow-hidden">
       <FallingStars />
       <MouseFollower />
 
-      <nav className="fixed top-4 sm:top-6 left-1/2 transform -translate-x-1/2 z-50 backdrop-blur-md bg-white/10 px-5 sm:px-6 py-3.5 sm:py-4 rounded-3xl w-[92%] sm:w-[85%] md:w-[75%] lg:w-[65%] max-w-5xl border-2 border-white/20 shadow-lg">
-        <div className="flex items-center justify-between">
-          <button
-            className="md:hidden text-white p-1.5 hover:bg-white/10 rounded-lg transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <Menu className="h-5 w-5" />
-          </button>
+      {/* NAVBAR */}
+      <nav className="fixed top-4 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] sm:w-[90%] md:w-[82%] lg:w-[70%] xl:w-[64%] max-w-6xl">
+  <div className="bg-white border border-black/5 shadow-lg rounded-[24px] px-5 sm:px-6 py-3 sm:py-3.5 transition-all duration-300">
+    <div className="relative flex items-center justify-between">
 
-          <div className="hidden md:flex flex-1">
-            <div className="flex items-center gap-6 lg:gap-10">
-              <Link
-                href="#Contact"
-                className="text-white hover:text-[#00ff59] text-sm lg:text-base font-bold transition-colors whitespace-nowrap"
-              >
-                Contact Us
-              </Link>
-              <Link
-                href="#Service"
-                className="text-white hover:text-[#00ff59] text-sm lg:text-base font-bold transition-colors whitespace-nowrap"
-              >
-                Services
-              </Link>
-            </div>
-          </div>
+      {/* Mobile Toggle */}
+      <motion.button
+        whileTap={{ scale: 0.95 }}
+        onClick={toggleMenu}
+        className="md:hidden p-2 rounded-xl hover:bg-black/5 transition-colors"
+        aria-label="Toggle menu"
+      >
+        <AnimatePresence mode="wait">
+          {isMenuOpen ? (
+            <motion.div
+              key="close"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <X className="h-6 w-6 text-black" />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="menu"
+              initial={{ rotate: 90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: -90, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <Menu className="h-6 w-6 text-black" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.button>
 
-          <Link
-            href="#"
-            className="flex items-center gap-2 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-[#00ff59]" />
-            <span className="text-white font-extrabold text-lg sm:text-xl lg:text-2xl">Maz</span>
-          </Link>
-
-          <div className="hidden md:flex flex-1 justify-end">
-            <div className="flex items-center gap-6 lg:gap-8">
-              <Link
-                href="#Project"
-                className="text-white hover:text-[#00ff59] text-sm lg:text-base font-bold transition-colors whitespace-nowrap"
-              >
-                Projects
-              </Link>
-              <Link
-                href="#Reviews"
-                className="text-white hover:text-[#00ff59] text-sm lg:text-base font-bold transition-colors whitespace-nowrap"
-              >
-                Reviews
-              </Link>
-              <Button
-                size="sm"
-                className="bg-[#00ff59] text-black hover:bg-[#00dd4f] font-bold shadow-lg hover:shadow-[0_0_20px_rgba(0,255,89,0.5)] transition-all duration-300 text-sm"
-              >
-                Book a Call
-              </Button>
-            </div>
-          </div>
-          <div className="w-8 md:hidden"></div>
-        </div>
-
-        {mobileMenuOpen && (
-<div className="md:hidden fixed inset-0 top-0 left-0 right-0 z-[200] animate-in fade-in slide-in-from-top-5 duration-300">
-  {/* Frosted glass background like top navbar */}
-  <div className="absolute inset-0 bg-white/10 backdrop-blur-3xl border border-white/20 shadow-lg" />
-
-  <div className="relative flex flex-col h-full px-8 py-10 z-10">
-    {/* Close Button */}
-    <button
-      className="absolute top-3 right-6 text-white hover:text-[#39FF14] p-2 rounded-lg hover:bg-white/10 transition-all duration-300"
-      onClick={() => setMobileMenuOpen(false)}
-      aria-label="Close menu"
-    >
-      <X className="h-6 w-6" />
-    </button>
-
-    {/* Navigation Links */}
-    <div className="flex flex-col items-center justify-center gap-6 mt-16 text-center">
-      {[
-        { href: "#Project", label: "Projects" },
-        { href: "#Service", label: "Services" },
-        { href: "#Reviews", label: "Reviews" },
-        { href: "#Contact", label: "Contact Us" },
-      ].map((link, i) => (
-        <Link
-          key={i}
-          href={link.href}
-          className="relative text-white font-semibold text-[1.25rem] tracking-wide hover:text-[#39FF14] transition-all duration-300 pb-2 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-[2px] after:bg-[#39FF14] hover:after:w-3/4 after:transition-all after:duration-300"
-          onClick={() => setMobileMenuOpen(false)}
-        >
-          {link.label}
+      {/* Left Links */}
+      <div className="hidden md:flex flex-1 gap-10">
+        <Link href="#Services" className="font-bold text-black hover:text-[#00ff59] transition-colors">
+          Services
         </Link>
-      ))}
+        <Link href="#CaseStudies" className="font-bold text-black hover:text-[#00ff59] transition-colors">
+          Case Studies
+        </Link>
+        <Link href="#Contact" className="font-bold text-black hover:text-[#00ff59] transition-colors">
+          Contact
+        </Link>
+      </div>
+
+      {/* Center Logo */}
+      <Link href="/" className="absolute left-1/2 -translate-x-1/2">
+        <Image src="/Assets/LOGO.png" alt="Logo" width={120} height={40} priority className="h-12 w-auto" />
+      </Link>
+
+      {/* Right Links */}
+      <div className="hidden md:flex flex-1 justify-end gap-10 items-center">
+        <Link href="#Projects" className="font-bold text-black hover:text-[#00ff59] transition-colors">
+          Projects
+        </Link>
+        <Link href="#Reviews" className="font-bold text-black hover:text-[#00ff59] transition-colors">
+          Reviews
+        </Link>
+        <Button className="bg-[#00ff59] text-black font-extrabold px-6 sm:px-7 py-3 sm:py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+          Book a Call
+        </Button>
+      </div>
     </div>
-
-    {/* CTA Button */}
-<div className="mt-auto pb-10 flex justify-center">
-  <Button
-    size="lg"
-    className="relative bg-[#39FF14] text-black font-extrabold rounded-2xl px-12 py-6 text-lg shadow-[0_0_30px_rgba(57,255,20,0.5)] hover:shadow-[0_0_45px_rgba(57,255,20,0.8)] hover:scale-[1.03] transition-all duration-300"
-    onClick={() => {
-      setMobileMenuOpen(false);
-      const bookingSection = document.getElementById("booking");
-      if (bookingSection) {
-        bookingSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }}
-  >
-    Book a Call
-  </Button>
-</div>
-
-
-    {/* Bottom Glow Line */}
-    <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#39FF14]/60 to-transparent blur-[4px]" />
   </div>
-</div>
 
-
-      
-        )}
-      </nav>
+  {/* Mobile Menu */}
+  <AnimatePresence>
+    {isMenuOpen && (
+      <motion.div
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: "auto", opacity: 1 }}
+        exit={{ height: 0, opacity: 0 }}
+        transition={{ duration: 0.25, ease: "easeInOut" }}
+        className="md:hidden mt-3 bg-white border border-black/5 shadow-lg rounded-3xl overflow-hidden"
+      >
+        <div className="px-6 py-5 space-y-4 text-center">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="block text-black font-bold text-lg hover:text-[#00ff59] transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Button className="w-full bg-[#00ff59] text-black font-extrabold px-8 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+            Book a Call
+          </Button>
+        </div>
+      </motion.div>
+    )}
+  </AnimatePresence>
+</nav>
 
 {/* HERO Section */}
       <main className="pt-24 sm:pt-28 md:pt-32 lg:pt-36 px-5 sm:px-6 md:px-8">
