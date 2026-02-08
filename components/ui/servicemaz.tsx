@@ -75,7 +75,7 @@ const Services = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full bg-background py-16 md:py-20 lg:py-24"
+      className="w-full bg-background py-16 md:py-20 lg:py-24 text-black"
     >
       <div className="section-container">
         <div className="bg-card rounded-2xl md:rounded-3xl p-8 md:p-12 lg:p-16 shadow-sm">

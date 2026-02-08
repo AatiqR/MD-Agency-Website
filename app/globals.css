@@ -479,3 +479,35 @@ body {
   0% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
+/* Service */
+
+@layer components {
+  .section-container {
+    @apply w-full max-w-6xl mx-auto px-6 md:px-12 lg:px-16;
+  }
+
+  .heading-display {
+    @apply text-6xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase;
+    color: hsl(var(--foreground));
+  }
+
+  .service-number {
+    @apply text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter;
+    color: hsl(var(--service-number));
+  }
+
+  .service-title {
+    @apply text-lg md:text-xl font-bold uppercase tracking-wide;
+    color: hsl(var(--service-title));
+  }
+
+  .service-description {
+    @apply text-sm md:text-base font-normal leading-relaxed;
+    color: hsl(var(--service-description));
+  }
+
+  .service-divider {
+    @apply w-full h-px;
+    background-color: hsl(var(--service-divider));
+  }
+}
