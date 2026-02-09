@@ -29,8 +29,8 @@ export default function Home() {
       <Webpro/>
       <Reviews/>
       <Benefit/>
-      <Booking/>
       <Faqs />
+      <Booking/>
       <Footer/>
     </div>
   )

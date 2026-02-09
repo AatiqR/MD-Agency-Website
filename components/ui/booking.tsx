@@ -99,7 +99,7 @@ export default function Booking() {
               href="tel:+1234567890"
               className="inline-flex items-center text-[#39FF14] hover:text-[#2ecc71] font-semibold text-lg transition-colors"
             >
-              +92 3432357017
+              +92 3055544729
             </a>
           </div>
         </div>

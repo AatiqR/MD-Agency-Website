@@ -8,54 +8,100 @@ export default function FAQSection() {
         <h2 className="text-white text-xl mb-2">Questions?</h2>
         <h1 className="text-[#4AE54A] text-5xl md:text-6xl font-bold mb-16">We got answers.</h1>
 
-        <Accordion type="single" collapsible className="space-y-4">
-          <AccordionItem value="item-1" className="border-0">
-            <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">Why Choose Mazl</span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-white">We deliver high-quality, custom websites that are fast, secure, and conversion-focused. With expert development, SEO optimization, ongoing support, and a 100% Money-Back Guarantee, we ensure your business stands out online. Let’s build something amazing! </AccordionContent>
-          </AccordionItem>
+       <Accordion type="single" collapsible className="space-y-4">
 
+  <AccordionItem value="item-1" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">How will your video editing help me get more views or leads?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      We edit with retention and action in mind. Strong hooks, clean pacing, and clear CTAs so viewers stay longer and take action.
+    </AccordionContent>
+  </AccordionItem>
 
+  <AccordionItem value="item-2" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">What makes Mars Agency different from other agencies?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      We focus on performance, not just visuals. Every edit, design, and strategy is built to support real growth.
+    </AccordionContent>
+  </AccordionItem>
 
-          <AccordionItem value="item-2" className="border-0">
-            <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">Who Behind Maz</span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-white">  A team of expert developers and designers led by Maz Rana, building fast, secure, and high-converting websites for your business success. 🚀</AccordionContent>
-          </AccordionItem>
+  <AccordionItem value="item-3" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">Do you work with my type of business or personal brand?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      Most likely, yes. We work with creators, coaches, real estate, fitness, and service-based brands.
+    </AccordionContent>
+  </AccordionItem>
 
-          <AccordionItem value="item-2" className="border-0">
-            <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">Can you redesign my existing website?</span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-white">Yes! We’ll revamp your site for a modern look, faster speed, and better conversions to grow your business. 🚀</AccordionContent>
-          </AccordionItem>
+  <AccordionItem value="item-4" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">How fast will I receive my edited videos or designs?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      Turnaround is fast and reliable. Most projects are delivered within a few days without compromising quality.
+    </AccordionContent>
+  </AccordionItem>
 
-          <AccordionItem value="item-3" className="border-0">
-            <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">Will my website be SEO-friendly and mobile-responsive?</span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-white">Absolutely! We build SEO-optimized, mobile-friendly websites for better rankings and user experience.</AccordionContent>
-          </AccordionItem>
+  <AccordionItem value="item-5" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">Can you match my brand style and content tone?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      Yes. We study your brand, audience, and goals to keep everything consistent and aligned.
+    </AccordionContent>
+  </AccordionItem>
 
-          <AccordionItem value="item-4" className="border-0">
-            <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">How much will my website cost?</span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 py-4 text-white">The cost depends on your project’s complexity. We offer custom pricing based on your needs. Contact us </AccordionContent>
-          </AccordionItem>
+  <AccordionItem value="item-6" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">Which platforms do you optimize content for?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      Instagram Reels, TikTok, YouTube Shorts, long-form YouTube, and paid ads.
+    </AccordionContent>
+  </AccordionItem>
 
-          <AccordionItem value="item-5" className="border-0">
-            <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
-              <span className="text-lg">What if I am not satisfied?</span>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 py-4  text-white">We offer a 100% Money-Back Guarantee if you are not happy with the final product.</AccordionContent>
-          </AccordionItem>
+  <AccordionItem value="item-7" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">Is this a one-time service or long-term collaboration?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      Both options are available. You can start small or scale into a long-term partnership.
+    </AccordionContent>
+  </AccordionItem>
 
-          
-      
-        </Accordion>
+  <AccordionItem value="item-8" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">What if I want revisions?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      You get reasonable revisions to ensure the final result matches your expectations.
+    </AccordionContent>
+  </AccordionItem>
+
+  <AccordionItem value="item-9" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">Will I need to guide every step?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      No. You share your goals and we handle the execution from start to finish.
+    </AccordionContent>
+  </AccordionItem>
+
+  <AccordionItem value="item-10" className="border-0">
+    <AccordionTrigger className="bg-[#111] rounded-lg px-6 py-4 text-white text-left hover:no-underline hover:bg-[#181818] transition-colors">
+      <span className="text-lg">How do I know this investment is worth it?</span>
+    </AccordionTrigger>
+    <AccordionContent className="px-6 py-4 text-white">
+      Our work is designed to improve engagement, consistency, and conversions, not just visuals.
+    </AccordionContent>
+  </AccordionItem>
+
+</Accordion>
+
 
 
       </div>

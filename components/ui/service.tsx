@@ -55,7 +55,7 @@ export default function ServiceCards() {
 
     <div className="mt-auto">
       <a
-        href="https://wa.me/+9203432357017?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Custom%20Website!"
+        href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Custom%20Website!"
         target="_blank"
         rel="noopener noreferrer"
         className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
@@ -105,7 +105,7 @@ export default function ServiceCards() {
 
     <div className="mt-auto">
       <a
-        href="https://wa.me/+9203432357017?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Website%20Redesign!"
+        href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Website%20Redesign!"
         target="_blank"
         rel="noopener noreferrer"
         className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
@@ -155,7 +155,7 @@ export default function ServiceCards() {
 
     <div className="mt-auto">
       <a
-        href="https://wa.me/+9203432357017?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Portfolio%20Website!"
+        href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Portfolio%20Website!"
         target="_blank"
         rel="noopener noreferrer"
         className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
@@ -209,7 +209,7 @@ export default function ServiceCards() {
 
     <div className="mt-auto">
       <a
-        href="https://wa.me/+9203432357017?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20an%20E-commerce%20Website!"
+        href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20an%20E-commerce%20Website!"
         target="_blank"
         rel="noopener noreferrer"
         className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
@@ -259,7 +259,7 @@ export default function ServiceCards() {
 
     <div className="mt-auto">
       <a
-        href="https://wa.me/+9203432357017?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Business%20Website!"
+        href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Business%20Website!"
         target="_blank"
         rel="noopener noreferrer"
         className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"

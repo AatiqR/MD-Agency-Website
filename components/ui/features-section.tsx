@@ -17,77 +17,78 @@ export default function FeaturesSection() {
             <span className="text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">Benefits</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-300">
-            What You Get By Working With Me
+            What You Get By Working With Maz Digital
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-24">
-          {/* Feature 1 */}
-          <div className="flex flex-col items-start">
-            <div className="mb-5">
-              <Grid className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Responsive Design</h3>
-            <p className="text-base text-gray-300 leading-relaxed">
-              Seamless performance on mobile, tablet, and desktop.
-            </p>
-          </div>
+  {/* Benefit 1 */}
+  <div className="flex flex-col items-start">
+    <div className="mb-5">
+      <Grid className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+    </div>
+    <h3 className="text-2xl font-bold mb-3">100% Client Satisfaction</h3>
+    <p className="text-base text-gray-300 leading-relaxed">
+      We don’t stop at delivery. Every project is refined until it truly works for your brand, audience, and goals.
+    </p>
+  </div>
 
-          {/* Feature 2 */}
-          <div className="flex flex-col items-start">
-            <div className="mb-5">
-              <Zap className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Lightning Fast</h3>
-            <p className="text-base text-gray-300 leading-relaxed">
-              Optimized websites with quick load times & smooth interactions.
-            </p>
-          </div>
+  {/* Benefit 2 */}
+  <div className="flex flex-col items-start">
+    <div className="mb-5">
+      <Zap className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+    </div>
+    <h3 className="text-2xl font-bold mb-3">3,000+ Projects Delivered</h3>
+    <p className="text-base text-gray-300 leading-relaxed">
+      From high-performing video edits to clean designs and websites, we know what works because we’ve done it at scale.
+    </p>
+  </div>
 
-          {/* Feature 3 */}
-          <div className="flex flex-col items-start">
-            <div className="mb-5">
-              <PuzzlePiece className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">High-Converting Websites</h3>
-            <p className="text-base text-gray-300 leading-relaxed">
-              50+ projects delivered → driving more leads, sales & engagement.
-            </p>
-          </div>
+  {/* Benefit 3 */}
+  <div className="flex flex-col items-start">
+    <div className="mb-5">
+      <PuzzlePiece className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+    </div>
+    <h3 className="text-2xl font-bold mb-3">95%+ Client Retention</h3>
+    <p className="text-base text-gray-300 leading-relaxed">
+      Clients stay with us because our content, visuals, and strategies consistently bring engagement, growth, and trust.
+    </p>
+  </div>
 
-          {/* Feature 4 */}
-          <div className="flex flex-col items-start">
-            <div className="mb-5">
-              <CreditCard className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Modern Tech Stack</h3>
-            <p className="text-base text-gray-300 leading-relaxed">
-              Next.js, React, Framer Motion, Webflow & more.
-            </p>
-          </div>
+  {/* Benefit 4 */}
+  <div className="flex flex-col items-start">
+    <div className="mb-5">
+      <CreditCard className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+    </div>
+    <h3 className="text-2xl font-bold mb-3">3+ Years of Experience</h3>
+    <p className="text-base text-gray-300 leading-relaxed">
+      Years of hands on experience in video editing, branding, social media, and web allow us to move fast and smart.
+    </p>
+  </div>
 
-          {/* Feature 5 */}
-          <div className="flex flex-col items-start">
-            <div className="mb-5">
-              <Users className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Client-Focused</h3>
-            <p className="text-base text-gray-300 leading-relaxed">
-              I collaborate with you to ensure results that match your goals.
-            </p>
-          </div>
+  {/* Benefit 5 */}
+  <div className="flex flex-col items-start">
+    <div className="mb-5">
+      <Users className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+    </div>
+    <h3 className="text-2xl font-bold mb-3">Content That Converts</h3>
+    <p className="text-base text-gray-300 leading-relaxed">
+      We edit videos, design visuals, and manage content with one goal in mind: attention, retention, and action.
+    </p>
+  </div>
 
-          {/* Feature 6 */}
-          <div className="flex flex-col items-start">
-            <div className="mb-5">
-              <Infinity className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
-            </div>
-            <h3 className="text-2xl font-bold mb-3">Ongoing Support</h3>
-            <p className="text-base text-gray-300 leading-relaxed">
-              Long-term maintenance & updates to keep your site fresh.
-            </p>
-          </div>
-        </div>
+  {/* Benefit 6 */}
+  <div className="flex flex-col items-start">
+    <div className="mb-5">
+      <Infinity className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+    </div>
+    <h3 className="text-2xl font-bold mb-3">Long Term Growth Partner</h3>
+    <p className="text-base text-gray-300 leading-relaxed">
+      We work like an in house team, helping you scale your brand across video, design, social media, and web.
+    </p>
+  </div>
+</div>
+
       </div>
     </div>
   )
