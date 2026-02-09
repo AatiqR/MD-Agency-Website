@@ -87,7 +87,7 @@ export default function Booking() {
               {/* Calendly widget container - ✅ Full Width / No Blank Space / No Scroll */}
               <div
                 className="calendly-inline-widget w-full h-[760px] rounded-2xl overflow-hidden"
-                data-url="https://calendly.com/Mazr9527/30min?hide_landing_page_details=1&hide_gdpr_banner=1"
+                data-url="https://calendly.com/mazdigitalservices0/let-s-dicuss-how-we-can-elevate-your-content?month=2026-02"
               />
             </div>
           </div>

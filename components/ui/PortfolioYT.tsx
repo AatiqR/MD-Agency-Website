@@ -20,88 +20,88 @@ const HelpSection = () => {
 
   const youtubeVideos = [
     {
-      id: "0K5ZeNbUGgA",
-      thumbnail: "https://img.youtube.com/vi/0K5ZeNbUGgA/hqdefault.jpg",
-      overlayText: "Sales Funnel",
+      id: "0rOoyoA6yMA",
+      thumbnail: "https://img.youtube.com/vi/0rOoyoA6yMA/hqdefault.jpg",
+      overlayText: "Ad Creatives",
     },
     {
-      id: "t18LkEWqai0",
-      thumbnail: "https://img.youtube.com/vi/t18LkEWqai0/hqdefault.jpg",
-      overlayText: " Live A Life Full of HAPPINESS ",
+      id: "Ua7uzXViGck",
+      thumbnail: "https://img.youtube.com/vi/Ua7uzXViGck/hqdefault.jpg",
+      overlayText: "Intro Style",
     },
     {
-      id: "lyLEBnUTqJI",
-      thumbnail: "https://img.youtube.com/vi/lyLEBnUTqJI/hqdefault.jpg",
-      overlayText: "21 Life-Changing Books ",
+      id: "EjmDCVuDdDA",
+      thumbnail: "https://img.youtube.com/vi/J-Q3MJfe5cA/hqdefault.jpg",
+      overlayText: "Long Form Videos",
     },
     {
-      id: "0BwRauAB6Zc",
-      thumbnail: "https://img.youtube.com/vi/0BwRauAB6Zc/hqdefault.jpg",
-      overlayText: "How to Start Reading Again",
+      id: "eWMc2X4DKWg",
+      thumbnail: "https://img.youtube.com/vi/eWMc2X4DKWg/hqdefault.jpg",
+      overlayText: "Long Form Videos",
     },
     {
-      id: "ZpP2dgREjSU",
-      thumbnail: "https://img.youtube.com/vi/ZpP2dgREjSU/hqdefault.jpg",
-      overlayText: "7 Signs You're Financially Well",
+      id: "EKvUhAejqbY",
+      thumbnail: "https://img.youtube.com/vi/EKvUhAejqbY/hqdefault.jpg",
+      overlayText: "Long Form Videos",
     },
     {
-      id: "tpR0Hk7fcpQ",
-      thumbnail: "https://img.youtube.com/vi/tpR0Hk7fcpQ/hqdefault.jpg",
-      overlayText: "3 Weekend Businesses",
+      id: "gFbPjs0PyCI",
+      thumbnail: "https://img.youtube.com/vi/gFbPjs0PyCI/hqdefault.jpg",
+      overlayText: "Cash Cow Style",
     },
     {
-      id: "QThz1B8SHmc",
-      thumbnail: "https://img.youtube.com/vi/QThz1B8SHmc/hqdefault.jpg",
-      overlayText: "How To Manage Your Money Like The 1%",
+      id: "HiGfiPH-8Gk",
+      thumbnail: "https://img.youtube.com/vi/HiGfiPH-8Gk/hqdefault.jpg",
+      overlayText: "Documentary Style",
     },
     {
-      id: "rl9WxD10WLs",
-      thumbnail: "https://img.youtube.com/vi/rl9WxD10WLs/hqdefault.jpg",
-      overlayText: "5 Books for the Self-Learner ",
+      id: "Rs7TggucByg",
+      thumbnail: "https://img.youtube.com/vi/Rs7TggucByg/hqdefault.jpg",
+      overlayText: "Real Estate",
     },
   ];
 
   const shortFormVideos = [
     {
-      id: "MPZ5OHVwU_I",
+      id: "oG_9cemH2YM",
       thumbnail:
-        "https://i.ytimg.com/vi/MPZ5OHVwU_I/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBDedPd5bQVkVW4nfwIk0nJB3mSVQ",
+        "https://i.ytimg.com/vi/oG_9cemH2YM/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBDedPd5bQVkVW4nfwIk0nJB3mSVQ",
       title: "Wearing SPF",
       overlayText: "Daily routine",
     },
     {
-      id: "cEkQXu17__U",
+      id: "EbR6NcWWr5E",
       thumbnail:
-        "https://i.ytimg.com/vi/cEkQXu17__U/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAkjYK5sZz1_5RYEI_686XIr99qaw",
+        "https://i.ytimg.com/vi/EbR6NcWWr5E/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAkjYK5sZz1_5RYEI_686XIr99qaw",
       title: "but I can't",
       overlayText: "Honest truth",
     },
     {
-      id: "u2B1cuKinNM",
+      id: "8rxwuzCWP00",
       thumbnail:
-        "https://i.ytimg.com/vi/u2B1cuKinNM/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAy2iuvXyr51P501QW6lC9LUTqNuw",
+        "https://i.ytimg.com/vi/8rxwuzCWP00/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAy2iuvXyr51P501QW6lC9LUTqNuw",
       title: "How to save money fast",
       overlayText: "Money tips",
     },
     {
-      id: "PkHjvwdPxtk",
+      id: "AhvLEKHbNdc",
       thumbnail:
-        "https://i.ytimg.com/vi/PkHjvwdPxtk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCj65WTpTgvnVOELiR0tC8QtllqxQ",
+        "https://i.ytimg.com/vi/AhvLEKHbNdc/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCj65WTpTgvnVOELiR0tC8QtllqxQ",
       title: "Creating social media ads used to feel SO overwhelming.",
       overlayText: "Mind tricks",
     },
     {
-      id: "hh40VWJS5vw",
+      id: "N3U7WTBnJgM",
       thumbnail:
-        "https://i.ytimg.com/vi/hh40VWJS5vw/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLB6W8DLZ3RBAz2JqfRFn_fURRYbVQ",
+        "https://i.ytimg.com/vi/N3U7WTBnJgM/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLB6W8DLZ3RBAz2JqfRFn_fURRYbVQ",
       title:
         "How dealerships really make money (hint: it’s not the shiny car on the lot). 💸",
       overlayText: "Money tips",
     },
     {
-      id: "e9xaHlNheSI",
+      id: "sIlf_RQ360A",
       thumbnail:
-        "https://i.ytimg.com/vi/e9xaHlNheSI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDa-K02VieWfb5T0MI42jMSWaRM5g",
+        "https://i.ytimg.com/vi/sIlf_RQ360A/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDa-K02VieWfb5T0MI42jMSWaRM5g",
       title: "Thinnest Apple Products #apple #smartphone #tech",
       overlayText: "Viral moment",
     },
@@ -212,17 +212,19 @@ const HelpSection = () => {
             variants={itemVariants}
             className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight"
           >
-            How can we help{" "}
-            <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent italic">
-              you?
+            Our  {" "}
+            <span className="bg-gradient-to-r from-green-400 to-green-400 bg-clip-text text-transparent italic">
+              Video Editing {" "}
             </span>
+            Work
           </motion.h1>
           <motion.p
             variants={itemVariants}
             className="text-gray-400 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed"
           >
-            From short-form videos, to long-form videos, to ad creatives,
-            and VSLs, we have got you covered on every front.
+           For creators, brands, and agencies. From YouTube videos and ad creatives to white-label
+production, we deliver clean, engaging, algorithm-friendly edits.
+
           </motion.p>
         </motion.div>
 
@@ -236,7 +238,7 @@ const HelpSection = () => {
             <div className="bg-gradient-to-br from-black via-black to-black rounded-3xl p-10 md:p-16 shadow-2xl">
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                  Talking Head Videos
+              OUR WORK
                 </h2>
                 <p className="text-gray-300 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
                   YouTube videos made more engaging than ever for longer watch

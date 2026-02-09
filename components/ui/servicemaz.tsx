@@ -1,6 +1,11 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  type MotionValue,
+} from "framer-motion";
 import { useRef } from "react";
 
 const services = [
@@ -29,9 +34,78 @@ const services = [
       "Strategic content planning, posting, and optimization to grow reach, maintain consistency, and turn social media presence into real business growth."
   }
 ];
+
 // Apple / Linear-style easing
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
+/* -------------------------------------------------
+   Animated service row
+-------------------------------------------------- */
+function ServiceRow({
+  service,
+  index,
+  scrollYProgress,
+}: {
+  service: (typeof services)[number];
+  index: number;
+  scrollYProgress: MotionValue<number>;
+}) {
+  const rowX = useTransform(
+    scrollYProgress,
+    [0.3 + index * 0.12, 0.5 + index * 0.12],
+    [-160, 0]
+  );
+
+  const rowY = useTransform(
+    scrollYProgress,
+    [0.3 + index * 0.12, 0.5 + index * 0.12],
+    [80, 0]
+  );
+
+  const rowOpacity = useTransform(
+    scrollYProgress,
+    [0.28 + index * 0.12, 0.38 + index * 0.12],
+    [0, 1]
+  );
+
+  return (
+    <motion.div
+      style={{ x: rowX, y: rowY, opacity: rowOpacity }}
+      className="flex items-start gap-8 md:gap-20
+                 py-20 border-b border-black/15
+                 last:border-b-0 w-full"
+    >
+      {/* HUGE number */}
+      <div
+        className="text-[clamp(5.5rem,10vw,9rem)]
+                   font-black tracking-tighter
+                   leading-none text-black shrink-0"
+      >
+        {service.number}
+      </div>
+
+      {/* Text block */}
+      <div className="flex flex-col gap-5 max-w-3xl">
+        <h3
+          className="text-xl md:text-2xl font-black
+                     uppercase tracking-wide text-black"
+        >
+          {service.title}
+        </h3>
+        <p
+          className="text-base md:text-lg
+                     leading-relaxed text-black"
+        >
+          {service.description}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+
+/* -------------------------------------------------
+   Main section
+-------------------------------------------------- */
 export default function Services() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -72,79 +146,34 @@ export default function Services() {
           </h1>
         </motion.div>
 
-        {/* Actual heading (top left) */}
-      <motion.h2
-  initial={{ x: 0, opacity: 0 }}
-  whileInView={{ opacity: 1 }}
-  viewport={{ once: true }}
-  transition={{ duration: 1.2, ease: EASE }}
-  className="
-    relative z-10
-    mx-auto text-center
-    w-fit
-    text-[clamp(3.5rem,8vw,7rem)]
-    font-black uppercase tracking-tight
-    mb-28 text-black
-  "
->
-  Services
-</motion.h2>
-
+        {/* Actual heading */}
+        <motion.h2
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: EASE }}
+          className="
+            relative z-10
+            mx-auto text-center
+            w-fit
+            text-[clamp(3.5rem,8vw,7rem)]
+            font-black uppercase tracking-tight
+            mb-28 text-black
+          "
+        >
+          Services
+        </motion.h2>
 
         {/* Services list */}
         <div className="relative z-10 flex flex-col">
-          {services.map((service, i) => {
-            const rowX = useTransform(
-              scrollYProgress,
-              [0.3 + i * 0.12, 0.5 + i * 0.12],
-              [-160, 0]
-            );
-            const rowY = useTransform(
-              scrollYProgress,
-              [0.3 + i * 0.12, 0.5 + i * 0.12],
-              [80, 0]
-            );
-            const rowOpacity = useTransform(
-              scrollYProgress,
-              [0.28 + i * 0.12, 0.38 + i * 0.12],
-              [0, 1]
-            );
-
-            return (
-              <motion.div
-                key={service.number}
-                style={{ x: rowX, y: rowY, opacity: rowOpacity }}
-                className="flex items-start gap-8 md:gap-20
-                           py-20 border-b border-black/15
-                           last:border-b-0 w-full"
-              >
-                {/* HUGE number */}
-                <div
-                  className="text-[clamp(5.5rem,10vw,9rem)]
-                             font-black tracking-tighter
-                             leading-none text-black shrink-0"
-                >
-                  {service.number}
-                </div>
-
-                {/* Text block */}
-                <div className="flex flex-col gap-5 max-w-3xl">
-                  <h3
-                    className="text-xl md:text-2xl font-black
-                               uppercase tracking-wide text-black"
-                  >
-                    {service.title}
-                  </h3>
-                  <p
-                    className="text-base md:text-lg
-                               leading-relaxed text-black"
-                  >
-                    {service.description}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
+          {services.map((service, index) => (
+            <ServiceRow
+              key={service.number}
+              service={service}
+              index={index}
+              scrollYProgress={scrollYProgress}
+            />
+          ))}
         </div>
       </motion.div>
     </section>
