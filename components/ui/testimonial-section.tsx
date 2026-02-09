@@ -39,213 +39,215 @@ export default function TestimonialSection() {
       animation: marquee-vertical-reverse var(--duration) linear infinite;
     }
   `
-
-  const firstColumnTestimonials: Testimonial[] = [
-    {
-      name: "James Walker",
-      position: "Founder, Tech Solutions",
-      quote:
-        "Maz's expertise in web development transformed our online presence. The website is fast, responsive, and visually stunning!",
-      initial: "J",
-      image: "/Assets/Reviews/user1.jpeg",
-    },
-    {
-      name: "Sophia Martinez",
-      position: "CEO, Digital Wave",
-      quote:
-        "Maz delivered an outstanding website. The UI/UX is flawless, and our customers love the seamless experience.",
-      initial: "S",
-      image: "/Assets/Reviews/user2.png",
-    },
-    {
-      name: "Liam Anderson",
-      position: "Freelancer",
-      quote:
-        "My portfolio website turned out exactly how I wanted. Maz’s skills in React and Next.js are top-notch!",
-      initial: "L",
-      image: "/Assets/Reviews/user3.jpeg",
-    },
-    {
-      name: "Emma Johansson",
-      position: "Founder, Creative Minds",
-      quote:
-        "Working with Maz was a pleasure. He understood our vision and delivered a beautiful, functional website on time!",
-      initial: "E",
-      image: "/Assets/Reviews/user4.jpeg",
-    },
-    {
-      name: "Noah Williams",
-      position: "Marketing Head, Visionary Media",
-      quote:
-        "Maz built a lightning-fast, SEO-friendly website for us. His expertise in modern web technologies is impressive!",
-      initial: "N",
-      image: "/Assets/Reviews/user5.jpeg",
-    },
-    {
-      name: "Olivia Brown",
-      position: "Owner, Art Boutique",
-      quote:
-        "Maz delivered beyond our expectations! Our e-commerce store now runs smoothly and looks stunning.",
-      initial: "O",
-      image: "/Assets/Reviews/user6.jpeg",
-    },
-    {
-      name: "Ethan Carter",
-      position: "Founder, CodeNest",
-      quote:
-        "From UI design to backend logic, Maz nailed every aspect of our website. Highly recommended!",
-      initial: "E",
-      image: "/Assets/Reviews/user1.jpeg",
-    },
-    {
-      name: "Mia Schmidt",
-      position: "Blogger & Influencer",
-      quote:
-        "My blog's performance and aesthetics improved drastically thanks to Maz’s incredible web development skills!",
-      initial: "M",
-      image: "/Assets/Reviews/user10.jpeg",
-    },
-    {
-      name: "Benjamin Hughes",
-      position: "CEO, InnovateTech",
-      quote:
-        "Maz is an absolute professional. He transformed our outdated website into a sleek, modern, and fast platform.",
-      initial: "B",
-      image: "/Assets/Reviews/user9.png",
-    },
-    {
-      name: "Charlotte Dupont",
-      position: "Founder, Style & Trends",
-      quote:
-        "Thanks to Maz, my fashion website is now more engaging and user-friendly. His attention to detail is remarkable!",
-      initial: "C",
-      image: "/Assets/Reviews/user4.jpeg",
-    }
+const firstColumnTestimonials: Testimonial[] = [
+  {
+    name: "Daniel Brooks",
+    position: "Real Estate Consultant",
+    quote:
+      "The video edits completely changed how my listings perform. Hooks are strong, pacing is perfect, and viewers are watching longer.",
+    initial: "D",
+    image: "/Assets/Reviews/user1.jpeg",
+  },
+  {
+    name: "Sarah Mitchell",
+    position: "Online Business Coach",
+    quote:
+      "Every video feels intentional and professional. The edits keep my audience engaged, and I see better retention than ever.",
+    initial: "S",
+    image: "/Assets/Reviews/user2.png",
+  },
+  {
+    name: "Anthony Rivera",
+    position: "Agency Owner",
+    quote:
+      "Outsourcing video editing here was a game-changer. Smooth cuts, clean pacing, and the content feels polished and professional.",
+    initial: "A",
+    image: "/Assets/Reviews/user3.jpeg",
+  },
+  {
+    name: "Melissa Grant",
+    position: "Personal Brand Strategist",
+    quote:
+      "Short-form edits feel premium and keep viewers hooked. It’s exactly what high-quality social media content should feel like.",
+    initial: "M",
+    image: "/Assets/Reviews/user4.jpeg",
+  },
+  {
+    name: "Kevin Thompson",
+    position: "Fitness Program Founder",
+    quote:
+      "Retention has improved dramatically. The video edits are smooth, fast, and keep viewers watching till the end.",
+    initial: "K",
+    image: "/Assets/Reviews/user5.jpeg",
+  },
+  {
+    name: "Nina Patel",
+    position: "Marketing Manager",
+    quote:
+      "Thumbnails and graphics instantly improved our CTR. Everything looks bold, clean, and perfectly aligned with our brand.",
+    initial: "N",
+    image: "/Assets/Reviews/user6.jpeg",
+  },
+  {
+    name: "Omar Khalid",
+    position: "E-commerce Brand Owner",
+    quote:
+      "Graphic designs are modern and eye-catching. Our ads now perform better, and everything feels premium.",
+    initial: "O",
+    image: "/Assets/Reviews/user7.jpeg",
+  },
+  {
+    name: "Laura Simmons",
+    position: "Content Manager",
+    quote:
+      "Video editing quality is consistent and reliable. Every project feels thought-through, professional, and engaging.",
+    initial: "L",
+    image: "/Assets/Reviews/user8.jpeg",
+  },
+  {
+    name: "Jason Miller",
+    position: "Startup Founder",
+    quote:
+      "The website they built is clean, fast, and conversion-focused. We started receiving qualified leads within weeks.",
+    initial: "J",
+    image: "/Assets/Reviews/user9.png",
+  },
+  {
+    name: "Emily Rogers",
+    position: "Coaching Business Owner",
+    quote:
+      "Our website now fully reflects our brand. Simple structure, smooth experience, and very professional.",
+    initial: "E",
+    image: "/Assets/Reviews/user10.jpeg",
+  },
 ];
+
 const secondColumnTestimonials: Testimonial[] = [
   {
-    name: "Jia smith",
-    position: "Fitness Coach, StrengthPro",
+    name: "Hassan Malik",
+    position: "Social Media Consultant",
     quote:
-      "The website design is top-notch! My online coaching platform now attracts more clients, and the user experience is seamless.",
-    initial: "J",
+      "Video edits are crafted for results. Engagement and watch time increased significantly across all platforms.",
+    initial: "H",
     image: "/Assets/Reviews2/u1.jpeg",
   },
   {
-    name: "Michael Russo",
-    position: "Gym Owner, Iron Core Fitness",
+    name: "Rebecca Collins",
+    position: "Online Course Creator",
     quote:
-      "Our gym membership sign-ups doubled after the website redesign. The layout and navigation are super intuitive.",
-    initial: "M",
+      "The editing style keeps viewers hooked naturally. Professional, polished, and highly effective for conversions.",
+    initial: "R",
     image: "/Assets/Reviews2/u2.jpeg",
   },
   {
-    name: "Robert Allen",
-    position: "Dog Trainer, Paws Academy",
+    name: "Thomas Nguyen",
+    position: "Brand Manager",
     quote:
-      "I’m extremely satisfied! The booking system for my dog training sessions works flawlessly, making my work so much easier.",
-    initial: "R",
+      "Great sense of pacing, hooks, and visuals. Video edits helped us communicate our messages clearly.",
+    initial: "T",
     image: "/Assets/Reviews2/u3.png",
   },
   {
-    name: "lissa ben",
-    position: "Strength Coach, FitZone",
+    name: "Ayesha Rahman",
+    position: "Lifestyle Brand Founder",
     quote:
-      "The new design is modern, sleek, and professional. My online fitness courses have gained more traction than ever before!",
-    initial: "C",
+      "Thumbnails and graphics look premium and consistent. My personal brand finally feels cohesive across all platforms.",
+    initial: "A",
     image: "/Assets/Reviews2/u4.jpeg",
   },
   {
-    name: "lilly Murphy",
-    position: "Personal Trainer, PowerHouse Training",
+    name: "Mark Evans",
+    position: "Digital Product Seller",
     quote:
-      "The responsive design ensures my fitness programs are easily accessible on all devices. I highly recommend this service!",
-    initial: "D",
+      "From editing to visuals, everything feels conversion-driven. The focus on results is what sets them apart.",
+    initial: "M",
     image: "/Assets/Reviews2/u5.jpeg",
   },
   {
-    name: "Ryan Parker",
-    position: "Gym Owner, Elite Fitness",
+    name: "Daniel Foster",
+    position: "Entrepreneur, Creative Works",
     quote:
-      "The website is fast, visually appealing, and easy to use. My clients love the new online class scheduling system!",
-    initial: "R",
+      "Video edits improved engagement and retention. Every cut is smooth and professional, keeping the audience watching.",
+    initial: "D",
     image: "/Assets/Reviews2/u6.png",
   },
   {
-    name: "Tom Williams",
-    position: "Dog Behaviorist, SmartPaws",
+    name: "Sophie Taylor",
+    position: "Coach, Mindset Academy",
     quote:
-      "Having a well-structured website has boosted my credibility as a professional dog trainer. Clients now find me effortlessly!",
-    initial: "T",
+      "The edits are perfectly timed and the visuals look incredible. My content now gets more views and better feedback.",
+    initial: "S",
     image: "/Assets/Reviews2/u7.jpeg",
   },
   {
-    name: "Ethan Collins",
-    position: "CrossFit Coach, Beast Mode Training",
+    name: "Lucas Morgan",
+    position: "Marketing Specialist",
     quote:
-      "Amazing service! The modern UI and seamless experience have taken my online fitness coaching to the next level.",
-    initial: "E",
+      "From thumbnails to videos, designs are consistent and visually appealing. Performance metrics improved noticeably.",
+    initial: "L",
     image: "/Assets/Reviews2/u8.jpeg",
   },
   {
-    name: "Matt Roberts",
-    position: "Dog Trainer, Happy Tails Academy",
+    name: "Isabella King",
+    position: "Content Creator",
     quote:
-      "Thanks to the professional website, I now have more dog training clients than ever before. Booking sessions is now hassle-free.",
-    initial: "M",
+      "Every video feels polished and professional. Editing quality makes a huge difference in audience engagement.",
+    initial: "I",
     image: "/Assets/Reviews2/u9.jpeg",
   },
   {
-    name: "Jason Brown",
-    position: "Athletic Trainer, Pro Performance",
+    name: "Ryan Carter",
+    position: "Business Coach",
     quote:
-      "The website's sleek design and smooth functionality have significantly improved client engagement. Highly satisfied!",
-    initial: "J",
-    image: "/Assets/Reviews2/u10.png",
+      "Social media content now looks clean, premium, and performs much better. I’ve received more inquiries since the redesign.",
+    initial: "R",
+    image: "/Assets/Reviews2/u10.jpeg",
   },
 ];
+
 const thirdColumnTestimonials: Testimonial[] = [
   {
-    name: "Dr. Emma Carter",
-    position: "Dentist, BrightSmile Dental",
+    name: "Chloe Bennett",
+    position: "Entrepreneur, Style Hive",
     quote:
-      "The new website design has streamlined appointment bookings for my dental clinic. Patients find it much easier to schedule visits now!",
-    initial: "E",
+      "Visuals are eye-catching and professional. My engagement rates went up significantly after using these services.",
+    initial: "C",
     image: "/Assets/Reviews3/u1.jpeg",
   },
   {
-    name: "Dr. Alex Robinson",
-    position: "Physician, HealthFirst Clinic",
+    name: "James Walker",
+    position: "Founder, Tech Solutions",
     quote:
-      "An outstanding platform! My medical practice now has a professional and user-friendly interface, making patient management smoother.",
-    initial: "A",
+      "The video editing gave our tutorials more clarity and punch. Viewer feedback has been amazing.",
+    initial: "J",
     image: "/Assets/Reviews3/u2.png",
   },
   {
-    name: "David Miller",
-    position: "CEO, DriveEasy Car Dealership",
+    name: "Sophia Martinez",
+    position: "CEO, Digital Wave",
     quote:
-      "Sales have skyrocketed since launching our sleek, modern website. Customers love the easy navigation and car browsing experience.",
-    initial: "D",
+      "Our videos now look premium and professional. Engagement has improved dramatically.",
+    initial: "S",
     image: "/Assets/Reviews3/u3.jpeg",
   },
   {
-    name: "Sophia Reynolds",
-    position: "Real Estate Agent, HomeHorizon Realty",
+    name: "Liam Anderson",
+    position: "Freelancer",
     quote:
-      "The property listings on my website now attract more potential buyers. The intuitive design makes house hunting a breeze!",
-    initial: "S",
+      "Editing quality is consistent, and every video feels carefully crafted. My social media traction has grown steadily.",
+    initial: "L",
     image: "/Assets/Reviews3/u4.jpeg",
   },
   {
-    name: "Luca Fernández",
-    position: "Entrepreneur, Global Ventures",
+    name: "Emma Johansson",
+    position: "Founder, Creative Minds",
     quote:
-      "As an international business owner, I needed a multilingual and visually appealing website. This service delivered beyond expectations!",
-    initial: "L",
+      "Graphic designs and thumbnails are consistent and modern. My brand now feels professional across all platforms.",
+    initial: "E",
     image: "/Assets/Reviews3/u5.jpeg",
   },
 ];
+
 
 
   return (

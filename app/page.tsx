@@ -20,13 +20,13 @@ export default function Home() {
     <div>
       <Hero />
       <Client/>
-      <Yotubeclient/>
+      <Yotubeclient/>     
+      <Service/>
       <Videoportfolio/>
       <Thumbnailslider/>
       <WebSliderf/>
-      <Webpro/>
       <Workflow/>
-      <Service/>
+      <Webpro/>
       <Reviews/>
       <Benefit/>
       <Booking/>
