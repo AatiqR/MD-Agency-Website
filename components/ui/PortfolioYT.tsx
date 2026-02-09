@@ -99,9 +99,9 @@ const HelpSection = () => {
       overlayText: "Money tips",
     },
     {
-      id: "sIlf_RQ360A",
+      id: "0WRpHkIxdN4",
       thumbnail:
-        "https://i.ytimg.com/vi/sIlf_RQ360A/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDa-K02VieWfb5T0MI42jMSWaRM5g",
+        "https://i.ytimg.com/vi/0WRpHkIxdN4/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDa-K02VieWfb5T0MI42jMSWaRM5g",
       title: "Thinnest Apple Products #apple #smartphone #tech",
       overlayText: "Viral moment",
     },
@@ -139,6 +139,7 @@ const HelpSection = () => {
 
     return (
       <motion.div
+      id="Projects"
         className={`relative ${aspectRatio} rounded-2xl overflow-hidden cursor-pointer group bg-black`}
         whileHover={{ scale: 1.03 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
@@ -261,13 +262,13 @@ production, we deliver clean, engaging, algorithm-friendly edits.
             transition={{ delay: 0.4 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-gray-900 via-black to-green-900/20 rounded-3xl p-10 md:p-16 shadow-2xl border border-green-500/10">
+            <div className="bg-gradient-to-br from-black via-black to-black rounded-3xl p-10 md:p-16 shadow-2xl border border-green-500/10">
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
                   Short Form Videos
                 </h2>
                 <p className="text-gray-300 text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
-                  Nail your Reels, TikToks, LinkedIn and YouTube shorts to
+                YouTube shorts & Reels, TikToks, LinkedIn  to
                   optimize engagement and shareability.
                 </p>
                 <ExploreButton />

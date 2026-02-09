@@ -70,6 +70,7 @@ function ServiceRow({
 
   return (
     <motion.div
+    id="Services"
       style={{ x: rowX, y: rowY, opacity: rowOpacity }}
       className="flex items-start gap-8 md:gap-20
                  py-20 border-b border-black/15
