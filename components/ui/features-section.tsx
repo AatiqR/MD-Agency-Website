@@ -14,7 +14,7 @@ export default function FeaturesSection() {
         {/* Heading Section */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
-            <span className="text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">Benefits</span>
+            <span className="text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">Benefits</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-300">
             What You Get By Working With Maz Digital
@@ -25,7 +25,7 @@ export default function FeaturesSection() {
   {/* Benefit 1 */}
   <div className="flex flex-col items-start">
     <div className="mb-5">
-      <Grid className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+      <Grid className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
     <h3 className="text-2xl font-bold mb-3">100% Client Satisfaction</h3>
     <p className="text-base text-gray-300 leading-relaxed">
@@ -36,7 +36,7 @@ export default function FeaturesSection() {
   {/* Benefit 2 */}
   <div className="flex flex-col items-start">
     <div className="mb-5">
-      <Zap className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+      <Zap className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
     <h3 className="text-2xl font-bold mb-3">3,000+ Projects Delivered</h3>
     <p className="text-base text-gray-300 leading-relaxed">
@@ -47,7 +47,7 @@ export default function FeaturesSection() {
   {/* Benefit 3 */}
   <div className="flex flex-col items-start">
     <div className="mb-5">
-      <PuzzlePiece className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+      <PuzzlePiece className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
     <h3 className="text-2xl font-bold mb-3">95%+ Client Retention</h3>
     <p className="text-base text-gray-300 leading-relaxed">
@@ -58,7 +58,7 @@ export default function FeaturesSection() {
   {/* Benefit 4 */}
   <div className="flex flex-col items-start">
     <div className="mb-5">
-      <CreditCard className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+      <CreditCard className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
     <h3 className="text-2xl font-bold mb-3">3+ Years of Experience</h3>
     <p className="text-base text-gray-300 leading-relaxed">
@@ -69,7 +69,7 @@ export default function FeaturesSection() {
   {/* Benefit 5 */}
   <div className="flex flex-col items-start">
     <div className="mb-5">
-      <Users className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+      <Users className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
     <h3 className="text-2xl font-bold mb-3">Content That Converts</h3>
     <p className="text-base text-gray-300 leading-relaxed">
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
   {/* Benefit 6 */}
   <div className="flex flex-col items-start">
     <div className="mb-5">
-      <Infinity className="w-10 h-10 text-[#39FF14] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
+      <Infinity className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
     <h3 className="text-2xl font-bold mb-3">Long Term Growth Partner</h3>
     <p className="text-base text-gray-300 leading-relaxed">

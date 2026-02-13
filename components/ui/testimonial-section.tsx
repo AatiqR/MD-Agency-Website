@@ -259,7 +259,7 @@ const thirdColumnTestimonials: Testimonial[] = [
 
       <div id="Reviews" className="flex flex-col my-24 bg-[#080808] text-white">
         <h1 className="text-2xl md:text-4xl lg:text-5xl mx-auto font-bold text-center mb-10">
-          What people are <span className="text-[#00ff59]">saying </span>about us.
+          What people are <span className="text-[#ffa200]">saying </span>about us.
         </h1>
         <div className="relative flex h-[500px] max-w-5xl mx-auto flex-row items-center justify-center overflow-hidden rounded-lg">
           {/* First column - Top to Bottom */}

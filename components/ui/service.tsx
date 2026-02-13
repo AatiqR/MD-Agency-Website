@@ -4,7 +4,7 @@ export default function ServiceCards() {
   return (
     <div id="Service" className="w-full bg-black text-white py-8">
       <div className="max-w-8xl mx-auto px-4">
-        {/* Service Heading with UFO Green Glow */}
+        {/* Service Heading with UFO orange Glow */}
         <div className="text-center mb-10">
           <h1 className="text-5xl font-bold mb-3 text-[#00ff08] ufo-glow">Our Services</h1>
           <p className="text-gray-300 max-w-2xl mx-auto">
@@ -24,23 +24,23 @@ export default function ServiceCards() {
 
     <ul className="space-y-2 mb-6 text-sm">
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Custom designs that capture your unique vision</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-300 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-300 mr-2 mt-0.5 flex-shrink-0" />
         <span>Flawless performance on all devices</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Ready in just <b>3</b> days</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Up to 5 revisions for perfection</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Easy-to-use contact form included</span>
       </li>
     </ul>
@@ -58,7 +58,7 @@ export default function ServiceCards() {
         href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Custom%20Website!"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
+        className="w-full rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm py-1.5 text-center block"
       >
         Claim Your Spot Now
       </a>
@@ -74,23 +74,23 @@ export default function ServiceCards() {
 
     <ul className="space-y-2 mb-6 text-sm">
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>A stunning new look for your existing site</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Perfect on desktops, tablets, and phones</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Delivered in 21 days</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>2 rounds of tweaks included</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Seamless content transfer</span>
       </li>
     </ul>
@@ -108,7 +108,7 @@ export default function ServiceCards() {
         href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Website%20Redesign!"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
+        className="w-full rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm py-1.5 text-center block"
       >
         Claim Your Spot Now
       </a>
@@ -124,23 +124,23 @@ export default function ServiceCards() {
 
     <ul className="space-y-2 mb-6 text-sm">
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Beautiful layouts to showcase your best work</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Works flawlessly on any device</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Ready in <b>3</b> days</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>3 rounds of revisions for your vision</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Interactive gallery with filters</span>
       </li>
     </ul>
@@ -158,7 +158,7 @@ export default function ServiceCards() {
         href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Portfolio%20Website!"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
+        className="w-full rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm py-1.5 text-center block"
       >
         Claim Your Spot Now
       </a>
@@ -174,27 +174,27 @@ export default function ServiceCards() {
 
     <ul className="space-y-2 mb-6 text-sm">
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>A store designed to maximize sales</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Mobile-ready for shoppers on the go</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Live in <b>5</b> days</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>3 rounds of refinements</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Secure payment gateways</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Easy product management tools</span>
       </li>
     </ul>
@@ -212,7 +212,7 @@ export default function ServiceCards() {
         href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20an%20E-commerce%20Website!"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
+        className="w-full rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm py-1.5 text-center block"
       >
         Claim Your Spot Now
       </a>
@@ -228,23 +228,23 @@ export default function ServiceCards() {
 
     <ul className="space-y-2 mb-6 text-sm">
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Polished design tailored to your business</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Responsive across all devices</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Ready in just <b>3</b> days</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>4 rounds of revisions</span>
       </li>
       <li className="flex items-start">
-        <Check className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+        <Check className="h-4 w-4 text-orange-500 mr-2 mt-0.5 flex-shrink-0" />
         <span>Lead capture forms included</span>
       </li>
     </ul>
@@ -262,7 +262,7 @@ export default function ServiceCards() {
         href="https://wa.me/+9203055544729?text=Hi,%20I%20want%20to%20claim%20my%20spot%20for%20a%20Business%20Website!"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full rounded-full bg-green-500 hover:bg-green-600 text-white text-sm py-1.5 text-center block"
+        className="w-full rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm py-1.5 text-center block"
       >
         Claim Your Spot Now
       </a>

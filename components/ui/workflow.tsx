@@ -64,7 +64,7 @@ const WorkflowTimeline = () => {
           pointerEvents: 'none',
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(57, 255, 20, 0.06) 0%, transparent 60%)'
+          background: 'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(255, 170, 0, 0.06) 0%, transparent 60%)'
         }}
       />
 
@@ -80,13 +80,13 @@ const WorkflowTimeline = () => {
           }}
         >
           <p style={{
-            color: '#39ff14',
+            color: '#ffa200',
             fontSize: 'clamp(10px, 2vw, 14px)',
             fontWeight: 600,
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
             marginBottom: '12px',
-            textShadow: '0 0 10px rgba(57, 255, 20, 0.6), 0 0 20px rgba(57, 255, 20, 0.4), 0 0 30px rgba(57, 255, 20, 0.2)',
+            textShadow: '0 0 10px rgba(255, 170, 0, 0.6), 0 0 20px rgba(255, 170, 0, 0.4), 0 0 30px rgba(255, 170, 0, 0.2)',
             animation: 'textGlow 2.5s ease-in-out infinite'
           }}>
             Workflow Process
@@ -103,10 +103,10 @@ const WorkflowTimeline = () => {
           <div style={{
             height: '4px',
             width: 'clamp(48px, 8vw, 80px)',
-            background: '#39ff14',
+            background: '#ffa200',
             margin: '16px auto 0',
             borderRadius: '9999px',
-            boxShadow: '0 0 8px rgba(57, 255, 20, 0.8), 0 0 16px rgba(57, 255, 20, 0.5), 0 0 24px rgba(57, 255, 20, 0.3)'
+            boxShadow: '0 0 8px rgba(255, 170, 0, 0.8), 0 0 16px rgba(255, 170, 0, 0.5), 0 0 24px rgba(255, 170, 0, 0.3)'
           }} />
         </div>
 
@@ -126,8 +126,8 @@ const WorkflowTimeline = () => {
               style={{
                 height: '3px',
                 borderRadius: '9999px',
-                background: 'linear-gradient(90deg, transparent 0%, #39ff14 15%, #39ff14 85%, transparent 100%)',
-                boxShadow: '0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.5), 0 0 30px rgba(57, 255, 20, 0.3)',
+                background: 'linear-gradient(90deg, transparent 0%, #ffa200 15%, #ffa200 85%, transparent 100%)',
+                boxShadow: '0 0 10px rgba(255, 170, 0, 0.8), 0 0 20px rgba(255, 170, 0, 0.5), 0 0 30px rgba(255, 170, 0, 0.3)',
                 animation: 'lineGlow 3s ease-in-out infinite'
               }}
             />
@@ -168,7 +168,7 @@ const WorkflowTimeline = () => {
                           top: '50%',
                           transform: 'translate(-50%, -50%)',
                           borderRadius: '50%',
-                          background: 'radial-gradient(circle, rgba(57, 255, 20, 0.3) 0%, transparent 70%)',
+                          background: 'radial-gradient(circle, rgba(255, 170, 0, 0.3) 0%, transparent 70%)',
                           animation: 'pulseGlow 2s ease-in-out infinite',
                           animationDelay: `${index * 0.3}s`
                         }}
@@ -184,8 +184,8 @@ const WorkflowTimeline = () => {
                           top: '50%',
                           transform: 'translate(-50%, -50%)',
                           borderRadius: '50%',
-                          border: '2px solid #39ff14',
-                          boxShadow: '0 0 10px rgba(57, 255, 20, 0.6), 0 0 20px rgba(57, 255, 20, 0.3)',
+                          border: '2px solid #ffa200',
+                          boxShadow: '0 0 10px rgba(255, 170, 0, 0.6), 0 0 20px rgba(255, 170, 0, 0.3)',
                           transition: 'all 0.5s ease-out',
                           animation: 'ringGlow 2.5s ease-in-out infinite',
                           animationDelay: `${index * 0.2}s`
@@ -199,11 +199,11 @@ const WorkflowTimeline = () => {
                           width: isActive ? 'clamp(20px, 3vw, 24px)' : 'clamp(16px, 2.5vw, 20px)',
                           height: isActive ? 'clamp(20px, 3vw, 24px)' : 'clamp(16px, 2.5vw, 20px)',
                           borderRadius: '50%',
-                          background: '#39ff14',
+                          background: '#ffa200',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          boxShadow: '0 0 8px #39ff14, 0 0 16px rgba(57, 255, 20, 0.6), 0 0 24px rgba(57, 255, 20, 0.4)',
+                          boxShadow: '0 0 8px #ffa200, 0 0 16px rgba(255, 170, 0, 0.6), 0 0 24px rgba(255, 170, 0, 0.4)',
                           transition: 'all 0.5s ease-out',
                           animation: 'dotGlow 2s ease-in-out infinite',
                           animationDelay: `${index * 0.15}s`
@@ -229,8 +229,8 @@ const WorkflowTimeline = () => {
                       transition: 'all 0.5s ease-out',
                       transform: isActive ? 'scale(1.02)' : 'scale(1)',
                       background: isActive 
-                        ? 'linear-gradient(180deg, rgba(57, 255, 20, 0.12) 0%, rgba(57, 255, 20, 0.03) 100%)' 
-                        : 'linear-gradient(180deg, rgba(57, 255, 20, 0.04) 0%, transparent 100%)'
+                        ? 'linear-gradient(180deg, rgba(255, 170, 0, 0.12) 0%, rgba(255, 170, 0, 0.03) 100%)' 
+                        : 'linear-gradient(180deg, rgba(255, 170, 0, 0.04) 0%, transparent 100%)'
                     }}
                   >
                     {/* Card border */}
@@ -239,8 +239,8 @@ const WorkflowTimeline = () => {
                         position: 'absolute',
                         inset: 0,
                         borderRadius: 'clamp(12px, 2vw, 16px)',
-                        border: isActive ? '1px solid rgba(57, 255, 20, 0.5)' : '1px solid rgba(57, 255, 20, 0.2)',
-                        boxShadow: isActive ? '0 0 20px rgba(57, 255, 20, 0.15), inset 0 0 20px rgba(57, 255, 20, 0.05)' : 'none',
+                        border: isActive ? '1px solid rgba(255, 170, 0, 0.5)' : '1px solid rgba(255, 170, 0, 0.2)',
+                        boxShadow: isActive ? '0 0 20px rgba(255, 170, 0, 0.15), inset 0 0 20px rgba(255, 170, 0, 0.05)' : 'none',
                         transition: 'all 0.5s',
                         pointerEvents: 'none'
                       }}
@@ -253,8 +253,8 @@ const WorkflowTimeline = () => {
                       letterSpacing: '0.15em',
                       textTransform: 'uppercase',
                       textAlign: 'center',
-                      color: isActive ? '#39ff14' : 'rgba(57, 255, 20, 0.7)',
-                      textShadow: isActive ? '0 0 10px rgba(57, 255, 20, 0.6), 0 0 20px rgba(57, 255, 20, 0.4)' : 'none',
+                      color: isActive ? '#ffa200' : 'rgba(255, 170, 0, 0.7)',
+                      textShadow: isActive ? '0 0 10px rgba(255, 170, 0, 0.6), 0 0 20px rgba(255, 170, 0, 0.4)' : 'none',
                       transition: 'all 0.5s',
                       margin: '0 0 clamp(8px, 1.5vw, 12px) 0'
                     }}>
@@ -272,8 +272,8 @@ const WorkflowTimeline = () => {
                         letterSpacing: '-0.05em',
                         fontSize: 'clamp(48px, 12vw, 112px)',
                         color: 'transparent',
-                        WebkitTextStroke: isActive ? '2px rgba(57, 255, 20, 0.6)' : '1px rgba(57, 255, 20, 0.25)',
-                        filter: isActive ? 'drop-shadow(0 0 20px rgba(57, 255, 20, 0.4))' : 'none',
+                        WebkitTextStroke: isActive ? '2px rgba(255, 170, 0, 0.6)' : '1px rgba(255, 170, 0, 0.25)',
+                        filter: isActive ? 'drop-shadow(0 0 20px rgba(255, 170, 0, 0.4))' : 'none',
                         transition: 'all 0.7s ease-out',
                         opacity: isActive ? 1 : 0.4
                       }}
@@ -289,7 +289,7 @@ const WorkflowTimeline = () => {
                         fontWeight: 700,
                         fontSize: 'clamp(12px, 2.5vw, 20px)',
                         color: isActive ? '#fafafa' : 'rgba(250, 250, 250, 0.7)',
-                        textShadow: isActive ? '0 0 20px rgba(57, 255, 20, 0.4)' : 'none',
+                        textShadow: isActive ? '0 0 20px rgba(255, 170, 0, 0.4)' : 'none',
                         transition: 'all 0.5s',
                         margin: 'clamp(-16px, -3vw, -32px) 0 0 0'
                       }}
@@ -320,8 +320,8 @@ const WorkflowTimeline = () => {
                         marginTop: 'clamp(12px, 2vw, 16px)',
                         height: '2px',
                         borderRadius: '9999px',
-                        background: '#39ff14',
-                        boxShadow: '0 0 8px rgba(57, 255, 20, 0.8), 0 0 16px rgba(57, 255, 20, 0.5)',
+                        background: '#ffa200',
+                        boxShadow: '0 0 8px rgba(255, 170, 0, 0.8), 0 0 16px rgba(255, 170, 0, 0.5)',
                         width: isActive ? 'clamp(32px, 5vw, 48px)' : '0',
                         opacity: isActive ? 1 : 0,
                         transition: 'all 0.7s ease-out'
@@ -350,9 +350,9 @@ const WorkflowTimeline = () => {
                 height: '8px',
                 borderRadius: '9999px',
                 border: 'none',
-                background: '#39ff14',
+                background: '#ffa200',
                 opacity: index === activeStep ? 1 : 0.4,
-                boxShadow: index === activeStep ? '0 0 8px #39ff14, 0 0 16px rgba(57, 255, 20, 0.6)' : 'none',
+                boxShadow: index === activeStep ? '0 0 8px #ffa200, 0 0 16px rgba(255, 170, 0, 0.6)' : 'none',
                 cursor: 'pointer',
                 transition: 'all 0.5s',
                 padding: 0
@@ -380,56 +380,56 @@ const WorkflowTimeline = () => {
         @keyframes textGlow {
           0%, 100% { 
             text-shadow: 
-              0 0 10px rgba(57, 255, 20, 0.5),
-              0 0 20px rgba(57, 255, 20, 0.3);
+              0 0 10px rgba(255, 170, 0, 0.5),
+              0 0 20px rgba(255, 170, 0, 0.3);
           }
           50% { 
             text-shadow: 
-              0 0 15px rgba(57, 255, 20, 0.8),
-              0 0 30px rgba(57, 255, 20, 0.5),
-              0 0 45px rgba(57, 255, 20, 0.3);
+              0 0 15px rgba(255, 170, 0, 0.8),
+              0 0 30px rgba(255, 170, 0, 0.5),
+              0 0 45px rgba(255, 170, 0, 0.3);
           }
         }
         
         @keyframes lineGlow {
           0%, 100% { 
             box-shadow: 
-              0 0 10px rgba(57, 255, 20, 0.6),
-              0 0 20px rgba(57, 255, 20, 0.4),
-              0 0 30px rgba(57, 255, 20, 0.2);
+              0 0 10px rgba(255, 170, 0, 0.6),
+              0 0 20px rgba(255, 170, 0, 0.4),
+              0 0 30px rgba(255, 170, 0, 0.2);
           }
           50% { 
             box-shadow: 
-              0 0 15px rgba(57, 255, 20, 0.9),
-              0 0 30px rgba(57, 255, 20, 0.6),
-              0 0 45px rgba(57, 255, 20, 0.3);
+              0 0 15px rgba(255, 170, 0, 0.9),
+              0 0 30px rgba(255, 170, 0, 0.6),
+              0 0 45px rgba(255, 170, 0, 0.3);
           }
         }
         
         @keyframes dotGlow {
           0%, 100% { 
             box-shadow: 
-              0 0 8px #39ff14,
-              0 0 16px rgba(57, 255, 20, 0.5);
+              0 0 8px #ffa200,
+              0 0 16px rgba(255, 170, 0, 0.5);
           }
           50% { 
             box-shadow: 
-              0 0 12px #39ff14,
-              0 0 24px rgba(57, 255, 20, 0.7),
-              0 0 36px rgba(57, 255, 20, 0.4);
+              0 0 12px #ffa200,
+              0 0 24px rgba(255, 170, 0, 0.7),
+              0 0 36px rgba(255, 170, 0, 0.4);
           }
         }
         
         @keyframes ringGlow {
           0%, 100% { 
             box-shadow: 
-              0 0 8px rgba(57, 255, 20, 0.5),
-              0 0 16px rgba(57, 255, 20, 0.3);
+              0 0 8px rgba(255, 170, 0, 0.5),
+              0 0 16px rgba(255, 170, 0, 0.3);
           }
           50% { 
             box-shadow: 
-              0 0 12px rgba(57, 255, 20, 0.8),
-              0 0 24px rgba(57, 255, 20, 0.5);
+              0 0 12px rgba(255, 170, 0, 0.8),
+              0 0 24px rgba(255, 170, 0, 0.5);
           }
         }
         

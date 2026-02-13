@@ -32,9 +32,9 @@ export default function Footer() {
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black via-black to-[#0a1a0a] opacity-90"></div>
-        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#39FF14] opacity-[0.05] blur-[150px] rounded-full animate-pulse"></div>
+        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#ffa200] opacity-[0.05] blur-[150px] rounded-full animate-pulse"></div>
         <div
-          className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-[#39FF14] opacity-[0.03] blur-[120px] rounded-full animate-pulse"
+          className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-[#ffa200] opacity-[0.03] blur-[120px] rounded-full animate-pulse"
           style={{ animationDelay: "1s" }}
         ></div>
       </div>
@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-5 bg-gradient-to-br from-black/60 to-[#0c1f0c]/30 p-6 rounded-xl border border-gray-800/50 shadow-xl backdrop-blur-sm">
             <div className="flex items-center mb-5">
-              <div className="w-12 h-12 bg-[#39FF14] rounded-md flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(57,255,20,0.6)]">
+              <div className="w-12 h-12 bg-[#ffa200] rounded-md flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(57,255,20,0.6)]">
                 <span className="text-black font-bold text-4xl">M</span>
               </div>
               <h3 className="text-white text-2xl font-bold"> Maz Digital</h3>
@@ -67,12 +67,12 @@ export default function Footer() {
               ].map((text, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center p-2 rounded-lg bg-black/30 border border-gray-800/50 transition-all duration-300 hover:border-[#39FF14]/60 hover:bg-black/50 group"
+                  className="flex items-center p-2 rounded-lg bg-black/30 border border-gray-800/50 transition-all duration-300 hover:border-[#ffa200]/60 hover:bg-black/50 group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-black/40 border border-gray-800 flex items-center justify-center mr-3 group-hover:border-[#39FF14]/70 transition-all duration-300">
-                    <CheckCircle className="text-[#39FF14] w-4 h-4" />
+                  <div className="w-8 h-8 rounded-full bg-black/40 border border-gray-800 flex items-center justify-center mr-3 group-hover:border-[#ffa200]/70 transition-all duration-300">
+                    <CheckCircle className="text-[#ffa200] w-4 h-4" />
                   </div>
-                  <span className="text-white text-sm group-hover:text-[#39FF14] transition-colors duration-300">
+                  <span className="text-white text-sm group-hover:text-[#ffa200] transition-colors duration-300">
                     {text}
                   </span>
                 </div>
@@ -93,12 +93,12 @@ export default function Footer() {
           {/* Services */}
           <div className="lg:col-span-3 bg-gradient-to-br from-black/60 to-[#0c1f0c]/30 p-6 rounded-xl border border-gray-800/50 shadow-xl backdrop-blur-sm">
             <h2 className="text-white text-lg font-semibold mb-5 pb-2 border-b border-gray-800 inline-block">
-              <span className="text-[#39FF14]">Our</span> Services
+              <span className="text-[#ffa200]">Our</span> Services
             </h2>
             <div className="space-y-3">
-              <FooterLink href="#" text="Video Editing" />
-              <FooterLink href="#" text="Web Development" />
-              <FooterLink href="#" text="Graphic Design" />
+              <FooterLink href="#Projects" text="Video Editing" />
+              <FooterLink href="#Web" text="Web Development" />
+              <FooterLink href="#Graphic" text="Graphic Design" />
             
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Footer() {
           {/* CTA / Contact */}
           <div className="lg:col-span-4 bg-gradient-to-br from-black/80 to-[#0c1f0c]/50 p-6 rounded-xl border border-gray-800/50 shadow-xl backdrop-blur-sm">
             <h3 className="text-white text-lg font-semibold mb-4">
-              <span className="text-[#39FF14]">Ready</span> to transform your
+              <span className="text-[#ffa200]">Ready</span> to transform your
               business?
             </h3>
 
@@ -115,7 +115,7 @@ export default function Footer() {
               href="https://wa.me/+923055544729?text=Hi,%20I’d%20like%20to%20book%20a%20free%20consultation!"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between bg-[#39FF14] hover:bg-[#2cff0f] text-black font-semibold rounded-md px-5 py-3 transition-all duration-300 w-full mb-6 shadow-[0_0_20px_rgba(57,255,20,0.6)] hover:shadow-[0_0_25px_rgba(57,255,20,0.8)]"
+              className="group flex items-center justify-between bg-[#ffa200] hover:bg-[#2cff0f] text-black font-semibold rounded-md px-5 py-3 transition-all duration-300 w-full mb-6 shadow-[0_0_20px_rgba(57,255,20,0.6)] hover:shadow-[0_0_25px_rgba(57,255,20,0.8)]"
             >
               <span>Book a Free Consultation Call</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -136,7 +136,7 @@ export default function Footer() {
             © Copyright {new Date().getFullYear()}{" "}
              
 
-            <span className="text-[#39FF14]">Maz Digital.</span> All rights reserved.
+            <span className="text-[#ffa200]">Maz Digital.</span> All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
             <FooterBottomLink text="Privacy Policy" />
@@ -156,7 +156,7 @@ function FooterLink({ href, text }: { href: string; text: string }) {
         href={href}
         className="text-gray-300 hover:text-white transition-all duration-300 relative group flex items-center"
       >
-        <ChevronRight className="w-4 h-4 mr-1 text-[#39FF14] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+        <ChevronRight className="w-4 h-4 mr-1 text-[#ffa200] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
         <span className="group-hover:translate-x-1 transition-transform duration-300">
           {text}
         </span>
@@ -168,9 +168,9 @@ function FooterLink({ href, text }: { href: string; text: string }) {
 function SocialIcon({ icon: Icon, name = "Social Icon" }: SocialIconProps) {
   return (
     <Link href="#" className="relative group" aria-label={name}>
-      <div className="absolute inset-0 bg-[#39FF14] rounded-lg blur opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
-      <div className="relative w-10 h-10 rounded-full bg-black/40 border border-gray-800 group-hover:border-[#39FF14] flex items-center justify-center transition-all duration-300 shadow-lg transform group-hover:translate-y-[-2px]">
-        <Icon className="w-6 h-6 text-gray-400 group-hover:text-[#39FF14] transition-colors duration-300" />
+      <div className="absolute inset-0 bg-[#ffa200] rounded-lg blur opacity-0 group-hover:opacity-70 transition-opacity duration-300"></div>
+      <div className="relative w-10 h-10 rounded-full bg-black/40 border border-gray-800 group-hover:border-[#ffa200] flex items-center justify-center transition-all duration-300 shadow-lg transform group-hover:translate-y-[-2px]">
+        <Icon className="w-6 h-6 text-gray-400 group-hover:text-[#ffa200] transition-colors duration-300" />
       </div>
     </Link>
   )
@@ -178,9 +178,9 @@ function SocialIcon({ icon: Icon, name = "Social Icon" }: SocialIconProps) {
 
 function ContactInfo({ icon: Icon, text }: ContactInfoProps) {
   return (
-    <div className="flex items-center p-2 rounded-lg bg-black/30 border border-gray-800/50 transition-all duration-300 hover:border-[#39FF14]/60 hover:bg-black/50 group">
-      <div className="mr-3 w-8 h-8 rounded-full bg-black/40 border border-gray-800 flex items-center justify-center flex-shrink-0 group-hover:border-[#39FF14]/70 transition-all duration-300">
-        <Icon className="text-[#39FF14] w-4 h-4" />
+    <div className="flex items-center p-2 rounded-lg bg-black/30 border border-gray-800/50 transition-all duration-300 hover:border-[#ffa200]/60 hover:bg-black/50 group">
+      <div className="mr-3 w-8 h-8 rounded-full bg-black/40 border border-gray-800 flex items-center justify-center flex-shrink-0 group-hover:border-[#ffa200]/70 transition-all duration-300">
+        <Icon className="text-[#ffa200] w-4 h-4" />
       </div>
       <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
         {text}

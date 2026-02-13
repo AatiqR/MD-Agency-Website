@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const portfolioImages = [
   { id: 1, src: "/Assets/Thumbnail/1.jpg", alt: "Portfolio Thumbnail Image 1" },
-  { id: 2, src: "/Assets/Thumbnail/2.jfif", alt: "Portfolio Thumbnail Image 2" },
+  { id: 2, src: "/Assets/Thumbnail/2.jpg", alt: "Portfolio Thumbnail Image 2" },
   { id: 3, src: "/Assets/Thumbnail/3.jpg", alt: "Portfolio Thumbnail Image 3" },
   { id: 4, src: "/Assets/Thumbnail/4.jpg", alt: "Portfolio Thumbnail Image 4" },
   { id: 5, src: "/Assets/Thumbnail/5.jpg", alt: "Portfolio Thumbnail Image 5" },
@@ -11,12 +11,12 @@ const portfolioImages = [
   { id: 7, src: "/Assets/Thumbnail/7.jpeg", alt: "Portfolio Thumbnail Image 7" },
   { id: 8, src: "/Assets/Thumbnail/8.jpg", alt: "Portfolio Thumbnail Image 8" },
   { id: 9, src: "/Assets/Thumbnail/9.jpg", alt: "Portfolio Thumbnail Image 9" },
-  { id: 10, src: "/Assets/Thumbnail/10.jfif", alt: "Portfolio Thumbnail Image 10" },
+  { id: 10, src: "/Assets/Thumbnail/10.jpg", alt: "Portfolio Thumbnail Image 10" },
   { id: 11, src: "/Assets/Thumbnail/11.jpg", alt: "Portfolio Thumbnail Image 11" },
   { id: 12, src: "/Assets/Thumbnail/12.jpg", alt: "Portfolio Thumbnail Image 12" },
   { id: 13, src: "/Assets/Thumbnail/13.jpg", alt: "Portfolio Thumbnail Image 13" },
   { id: 14, src: "/Assets/Thumbnail/14.jpg", alt: "Portfolio Thumbnail Image 14" },
-  { id: 15, src: "/Assets/Thumbnail/15.jfif", alt: "Portfolio Thumbnail Image 15" },
+  { id: 15, src: "/Assets/Thumbnail/15.jpg", alt: "Portfolio Thumbnail Image 15" },
   { id: 16, src: "/Assets/Thumbnail/16.jpg", alt: "Portfolio Thumbnail Image 16" },
   { id: 17, src: "/Assets/Thumbnail/17.jpg", alt: "Portfolio Thumbnail Image 17" },
   { id: 18, src: "/Assets/Thumbnail/18.jpg", alt: "Portfolio Thumbnail Image 18" },
@@ -114,6 +114,7 @@ const MarqueeRow = ({
 const FeaturedWork = () => {
   return (
     <section
+    id="Graphic"
       className="relative w-full py-16 md:py-20 overflow-hidden"
       style={{ backgroundColor: "#000000" }}
     >
@@ -157,7 +158,7 @@ const FeaturedWork = () => {
           <button
             className="px-10 py-3.5 rounded-full font-semibold transition-all"
             style={{
-              backgroundColor: "#00ff59",
+              backgroundColor: "#ffa200",
               color: "#000",
               boxShadow:
                 "0 0 50px -5px rgba(0,255,89,.4), 0 0 80px -10px rgba(0,255,89,.25)",

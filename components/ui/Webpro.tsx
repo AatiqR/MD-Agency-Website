@@ -7,13 +7,17 @@ export default function EcommerceLandingPage() {
   <div className="min-h-screen w-full rounded-4xl bg-gray-50">
 {/* 1st */}
 <div className="container mx-auto px-6 py-10 md:py-16">
+    <h1 className="text-6xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight text-center">
+      <span className="text-[#000000]">Case Studies</span>
+    </h1>
   {/* Title */}
-  <div className="text-center mb-12">
-    <h1 className="text-3xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight">
-      <span className="text-[#39FF14]">Padra Clinics</span>
+
+  <div className="text-center mb-12 mt-9">
+    <h2 className="text-3xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight">
+      <span className="text-[#ffa200]">Padra Clinics</span>
       <br />
       Transforming Hair Transplant Consultations Online
-    </h1>
+    </h2>
   </div>
 
   {/* Grid layout */}
@@ -196,7 +200,7 @@ export default function EcommerceLandingPage() {
   {/* Title */}
   <div className="text-center mb-12">
     <h1 className="text-3xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight">
-      <span className="text-[#39FF14]"> Raphaelson & Levine </span>
+      <span className="text-[#ffa200]"> Raphaelson & Levine </span>
        Law Firm
     </h1>
   </div>

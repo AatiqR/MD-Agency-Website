@@ -266,7 +266,7 @@ export default function WebsiteShowcaseSlider() {
 
   return (
     <div
-      id="Project"
+      id="Web"
       className="relative w-full overflow-hidden bg-black py-8 sm:py-12 md:py-16 px-2 sm:px-4 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] flex items-center justify-center"
     >
       <div className="max-w-7xl mx-auto w-full z-10">
