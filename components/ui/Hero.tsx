@@ -67,14 +67,14 @@ const FallingStars = memo(() => {
           for (let i = 1; i < star.tail.length; i++) {
             ctx.lineTo(star.tail[i].x, star.tail[i].y);
           }
-          ctx.strokeStyle = `rgba(0,255,89,${star.opacity * 0.5})`;
+          ctx.strokeStyle = `rgba(255,162,0,${star.opacity * 0.5})`;
           ctx.lineWidth = star.size / 2;
           ctx.stroke();
         }
 
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(0,255,89,${star.opacity})`;
+        ctx.fillStyle = `rgba(255,162,0,${star.opacity})`;
         ctx.fill();
 
         if (star.y > canvas.height) stars.splice(index, 1);
@@ -467,7 +467,6 @@ design solutions, delivered fast, clean, and stress free.
               <div className="w-3 h-3 bg-black rotate-45" />
               <span className="text-black font-black text-lg uppercase tracking-wider">Click Magnet Thumbnail</span>
               <div className="w-3 h-3 bg-black rotate-45" />
-               <div className="w-3 h-3 bg-black rotate-45" />
                <span className="text-black font-black text-lg uppercase tracking-wider">Scroll stopping</span>
               <div className="w-3 h-3 bg-black rotate-45" />
               <span className="text-black font-black text-lg uppercase tracking-wider">High Quality Leads</span>

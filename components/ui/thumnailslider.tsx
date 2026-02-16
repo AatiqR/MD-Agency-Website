@@ -34,51 +34,39 @@ const portfolioImages = [
   { id: 30, src: "/Assets/Thumbnail/30.jpg", alt: "Portfolio Thumbnail Image 30" },
 ];
 
-/* split images into 3 different rows */
+/* 🔥 Artwork (Square 1:1 images) */
+const artworkImages = [
+  { id: 101, src: "/Assets/Artwork/1.jpg", alt: "Artwork 1" },
+  { id: 102, src: "/Assets/Artwork/2.jpg", alt: "Artwork 2" },
+  { id: 103, src: "/Assets/Artwork/3.jpg", alt: "Artwork 3" },
+  { id: 104, src: "/Assets/Artwork/4.jpg", alt: "Artwork 4" },
+  { id: 105, src: "/Assets/Artwork/5.jpg", alt: "Artwork 5" },
+  { id: 106, src: "/Assets/Artwork/6.jpg", alt: "Artwork 6" },
+  { id: 107, src: "/Assets/Artwork/7.jpg", alt: "Artwork 7" },
+  { id: 108, src: "/Assets/Artwork/8.jpg", alt: "Artwork 8" },
+  { id: 109, src: "/Assets/Artwork/9.jpg", alt: "Artwork 9" },
+  { id: 110, src: "/Assets/Artwork/10.jpg", alt: "Artwork 10" },
+  { id: 111, src: "/Assets/Artwork/11.jpg", alt: "Artwork 11" },
+  { id: 112, src: "/Assets/Artwork/12.jpg", alt: "Artwork 12" },
+  { id: 113, src: "/Assets/Artwork/13.jpg", alt: "Artwork 13" },
+  { id: 114, src: "/Assets/Artwork/14.jpg", alt: "Artwork 14" },
+  { id: 116, src: "/Assets/Artwork/16.jpg", alt: "Artwork 16" },
+  { id: 117, src: "/Assets/Artwork/17.jpg", alt: "Artwork 17" },
+];
+
 const row1Images = portfolioImages.filter((_, i) => i % 3 === 0);
 const row2Images = portfolioImages.filter((_, i) => i % 3 === 1);
 const row3Images = portfolioImages.filter((_, i) => i % 3 === 2);
 
-/* floating background particles */
-const FloatingParticles = () => {
-  const particles = Array.from({ length: 8 }, (_, i) => ({
-    id: i,
-    left: `${Math.random() * 100}%`,
-    top: `${Math.random() * 100}%`,
-    size: Math.random() * 2 + 1,
-    delay: Math.random() * 10,
-    duration: Math.random() * 8 + 12,
-  }));
-
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {particles.map((p) => (
-        <div
-          key={p.id}
-          className="absolute rounded-full animate-float-particle-slow"
-          style={{
-            left: p.left,
-            top: p.top,
-            width: p.size,
-            height: p.size,
-            backgroundColor: "rgba(0, 255, 89, 0.4)",
-            animationDelay: `${p.delay}s`,
-            animationDuration: `${p.duration}s`,
-            boxShadow: `0 0 ${p.size * 4}px rgba(0, 255, 89, 0.3)`,
-          }}
-        />
-      ))}
-    </div>
-  );
-};
-
-/* marquee row */
+/* Thumbnail Row */
 const MarqueeRow = ({
   direction,
   images,
+  isArtwork = false,
 }: {
   direction: "left" | "right";
-  images: typeof portfolioImages;
+  images: any[];
+  isArtwork?: boolean;
 }) => {
   const animationClass =
     direction === "left"
@@ -86,22 +74,26 @@ const MarqueeRow = ({
       : "animate-marquee-right-slow";
 
   return (
-    <div className="relative overflow-hidden py-1.5">
-      <div className={`flex gap-3 ${animationClass}`} style={{ width: "fit-content" }}>
+    <div className="relative overflow-hidden py-2">
+      <div className={`flex gap-4 ${animationClass}`} style={{ width: "fit-content" }}>
         {[...images, ...images].map((image, index) => (
           <div
             key={`${image.id}-${index}`}
-            className="relative flex-shrink-0 w-52 sm:w-60 md:w-68 lg:w-76 aspect-video rounded-xl overflow-hidden"
+            className={`relative flex-shrink-0 rounded-xl overflow-hidden
+              ${isArtwork
+                ? "w-64 sm:w-72 md:w-80 aspect-square"
+                : "w-52 sm:w-60 md:w-68 lg:w-76 aspect-video"
+              }`}
             style={{
-              boxShadow: "0 12px 40px -12px rgba(0, 255, 89, 0.15)",
+              boxShadow: "0 12px 40px -12px rgba(255,162,0,0.25)",
             }}
           >
             <Image
-              width={100}
-  height={100}
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width:768px) 100vw, 400px"
+              className="object-contain bg-black"
               loading="lazy"
             />
           </div>
@@ -113,33 +105,12 @@ const MarqueeRow = ({
 
 const FeaturedWork = () => {
   return (
-    <section
-    id="Graphic"
-      className="relative w-full py-16 md:py-20 overflow-hidden"
-      style={{ backgroundColor: "#000000" }}
-    >
-      {/* glow */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(0, 255, 89, 0.04) 0%, transparent 70%)",
-          filter: "blur(60px)",
-        }}
-      />
-
-      <FloatingParticles />
-
+    <section className="relative w-full py-16 md:py-20 bg-black overflow-hidden">
       <div className="relative z-10">
+
+        {/* Heading */}
         <div className="max-w-7xl mx-auto px-4 text-center mb-14">
-          <h2
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase mb-4"
-            style={{
-              color: "#ffffff",
-              textShadow:
-                "0 0 80px rgba(0,255,89,.5), 0 0 120px rgba(0,255,89,.3)",
-            }}
-          >
+          <h2 className="text-5xl md:text-7xl font-black uppercase mb-4 text-white">
             Featured Work
           </h2>
           <p className="text-neutral-500 max-w-md mx-auto">
@@ -147,31 +118,38 @@ const FeaturedWork = () => {
           </p>
         </div>
 
-        {/* 3 different marquee rows */}
-        <div className="space-y-3 md:space-y-4 mb-14">
+        {/* 3 Thumbnail Rows */}
+        <div className="space-y-4 mb-20">
           <MarqueeRow direction="left" images={row1Images} />
           <MarqueeRow direction="right" images={row2Images} />
           <MarqueeRow direction="left" images={row3Images} />
         </div>
 
-        <div className="flex justify-center">
-          <button
-            className="px-10 py-3.5 rounded-full font-semibold transition-all"
+        {/* Artwork Heading */}
+        <div className="text-center mb-10">
+          <h3
+            className="text-4xl md:text-6xl font-extrabold uppercase"
             style={{
-              backgroundColor: "#ffa200",
-              color: "#000",
-              boxShadow:
-                "0 0 50px -5px rgba(0,255,89,.4), 0 0 80px -10px rgba(0,255,89,.25)",
+              color: "#FFA200",
+              textShadow: "0 0 60px rgba(255,162,0,0.4)",
             }}
           >
-            Book a Call →
-          </button>
+            Artwork Showcase
+          </h3>
         </div>
+
+        {/* Artwork Row (Square Perfect Fit) */}
+        <div className="mb-14">
+          <MarqueeRow
+            direction="right"
+            images={artworkImages}
+            isArtwork={true}
+          />
+        </div>
+
       </div>
     </section>
   );
 };
 
 export default FeaturedWork;
-
-
