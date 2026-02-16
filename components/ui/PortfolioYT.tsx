@@ -19,7 +19,48 @@ const HelpSection = () => {
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
 
   const youtubeVideos = [
+ {
+      id: "i6Z1vsmHSwA",
+      thumbnail: "https://img.youtube.com/vi/i6Z1vsmHSwA/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+        {
+      id: "jml0H_IcVlc",
+      thumbnail: "https://img.youtube.com/vi/jml0H_IcVlc/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+
+         {
+      id: "OpB0MEqB2_U",
+      thumbnail: "https://img.youtube.com/vi/OpB0MEqB2_U/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+ {
+      id: "2KNzIvpv8rw",
+      thumbnail: "https://img.youtube.com/vi/2KNzIvpv8rw/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+ {
+      id: "S351wd9rn1s",
+      thumbnail: "https://img.youtube.com/vi/S351wd9rn1s/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+
+
+
     {
+      id: "EjmDCVuDdDA",
+      thumbnail: "https://img.youtube.com/vi/J-Q3MJfe5cA/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+
+    {
+      id: "NNW8ZIrFhkE",
+      thumbnail: "https://img.youtube.com/vi/NNW8ZIrFhkE/hqdefault.jpg",
+      overlayText: "Long Form Videos",
+    },
+
+        {
       id: "0rOoyoA6yMA",
       thumbnail: "https://img.youtube.com/vi/0rOoyoA6yMA/hqdefault.jpg",
       overlayText: "Ad Creatives",
@@ -28,21 +69,6 @@ const HelpSection = () => {
       id: "Ua7uzXViGck",
       thumbnail: "https://img.youtube.com/vi/Ua7uzXViGck/hqdefault.jpg",
       overlayText: "Intro Style",
-    },
-    {
-      id: "EjmDCVuDdDA",
-      thumbnail: "https://img.youtube.com/vi/J-Q3MJfe5cA/hqdefault.jpg",
-      overlayText: "Long Form Videos",
-    },
-    {
-      id: "jml0H_IcVlc",
-      thumbnail: "https://img.youtube.com/vi/jml0H_IcVlc/hqdefault.jpg",
-      overlayText: "Long Form Videos",
-    },
-    {
-      id: "NNW8ZIrFhkE",
-      thumbnail: "https://img.youtube.com/vi/NNW8ZIrFhkE/hqdefault.jpg",
-      overlayText: "Long Form Videos",
     },
     {
       id: "gFbPjs0PyCI",
