@@ -38,7 +38,7 @@ export default function FeaturesSection() {
     <div className="mb-5">
       <Zap className="w-10 h-10 text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]" strokeWidth={1.25} />
     </div>
-    <h3 className="text-2xl font-bold mb-3">3,000+ Projects Delivered</h3>
+    <h3 className="text-2xl font-bold mb-3">1000+ Projects Delivered</h3>
     <p className="text-base text-gray-300 leading-relaxed">
       From high-performing video edits to clean designs and websites, we know what works because we’ve done it at scale.
     </p>

@@ -201,7 +201,7 @@ const secondColumnTestimonials: Testimonial[] = [
     quote:
       "Social media content now looks clean, premium, and performs much better. I’ve received more inquiries since the redesign.",
     initial: "R",
-    image: "/Assets/Reviews2/u10.jpeg",
+    image: "/Assets/Reviews2/u10.png",
   },
 ];
 

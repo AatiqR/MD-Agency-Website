@@ -125,8 +125,8 @@ export default function Footer() {
             <div className="space-y-3 mt-5">
               <ContactInfo icon={Phone} text="+92 0305 5544729" />
               <ContactInfo icon={Mail} text=" malik@mazdigital.me" />
-              <ContactInfo icon={MapPin} text="Karachi, Pakistan" />
               <ContactInfo icon={MapPin} text="Sharjah, UAE" />
+              <ContactInfo icon={MapPin} text="Karachi, Pakistan" />
               
             </div>
           </div>
