@@ -126,6 +126,8 @@ export default function Footer() {
               <ContactInfo icon={Phone} text="+92 0305 5544729" />
               <ContactInfo icon={Mail} text=" malik@mazdigital.me" />
               <ContactInfo icon={MapPin} text="Karachi, Pakistan" />
+              <ContactInfo icon={MapPin} text="Sharjah, UAE" />
+              
             </div>
           </div>
         </div>

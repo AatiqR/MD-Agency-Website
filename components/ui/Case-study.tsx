@@ -8,9 +8,12 @@ export default function EcommerceLandingPage() {
    className="min-h-screen w-full rounded-4xl bg-gray-50">
 {/* 1st */}
 <div className="container mx-auto px-6 py-10 md:py-16">
-  <h1 className="text-6xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight text-center">
-    <span className="text-[#000000]">Case Studies</span>
-  </h1>
+ <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tight text-center">
+  <span className="bg-gradient-to-r from-[#FFA200] to-[#ff8c00] bg-clip-text text-transparent animate-pulse">
+    Case Studies
+  </span>
+</h1>
+
 
   {/* Title */}
   <div className="text-center mb-12 mt-9">
