@@ -84,9 +84,9 @@ const HelpSection = () => {
       overlayText: "Money tips",
     },
     {
-      id: "AhvLEKHbNdc",
+      id: "0EXv89RkZDc",
       thumbnail:
-        "https://i.ytimg.com/vi/AhvLEKHbNdc/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCj65WTpTgvnVOELiR0tC8QtllqxQ",
+        "https://i.ytimg.com/vi/0EXv89RkZDc/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCj65WTpTgvnVOELiR0tC8QtllqxQ",
       title: "Creating social media ads used to feel SO overwhelming.",
       overlayText: "Mind tricks",
     },
