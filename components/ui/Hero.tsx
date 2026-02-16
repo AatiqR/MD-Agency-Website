@@ -142,17 +142,17 @@ MouseFollower.displayName = "MouseFollower";
    Static Data
 ========================= */
 const avatars = [
-  "/Assets/client/17.png",
-  "/Assets/client/37.png",
-  "/Assets/Youtuberclient/6.jpg",
-  "/Assets/client/3.jpg",
-  "/Assets/Youtuberclient/16.jpg",
-  "/Assets/client/44.png",
-  "/Assets/Youtuberclient/17.jpg",
-  "/Assets/client/20.png",
-  "/Assets/Youtuberclient/14.jpg",
-  "/Assets/client/12.png",
-  "/Assets/Youtuberclient/15.jpg",
+  "/Assets/client/51.png",
+  "/Assets/client/52.jpg",
+  "/Assets/client/63.jpg",
+  "/Assets/client/62.png",
+  "/Assets/client/53.jpeg",
+  "/Assets/client/60.jpg",
+  "/Assets/client/54.png",
+  "/Assets/client/55.png",
+  "/Assets/client/61.png",
+  "/Assets/client/56.jpg",
+  "/Assets/client/57.jpg",
 ];
 
 const navLinks = [
