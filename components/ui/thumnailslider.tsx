@@ -1,7 +1,15 @@
 "use client";
 import Image from "next/image";
 
-const portfolioImages = [
+/* ✅ Image Type */
+type ImageItem = {
+  id: number;
+  src: string;
+  alt: string;
+};
+
+/* ✅ Portfolio Images */
+const portfolioImages: ImageItem[] = [
   { id: 1, src: "/Assets/Thumbnail/1.jpg", alt: "Portfolio Thumbnail Image 1" },
   { id: 2, src: "/Assets/Thumbnail/2.jpg", alt: "Portfolio Thumbnail Image 2" },
   { id: 3, src: "/Assets/Thumbnail/3.jpg", alt: "Portfolio Thumbnail Image 3" },
@@ -34,8 +42,8 @@ const portfolioImages = [
   { id: 30, src: "/Assets/Thumbnail/30.jpg", alt: "Portfolio Thumbnail Image 30" },
 ];
 
-/* 🔥 Artwork (Square 1:1 images) */
-const artworkImages = [
+/* ✅ Artwork Images (1–17) */
+const artworkImages: ImageItem[] = [
   { id: 101, src: "/Assets/Artwork/1.jpg", alt: "Artwork 1" },
   { id: 102, src: "/Assets/Artwork/2.jpg", alt: "Artwork 2" },
   { id: 103, src: "/Assets/Artwork/3.jpg", alt: "Artwork 3" },
@@ -50,24 +58,29 @@ const artworkImages = [
   { id: 112, src: "/Assets/Artwork/12.jpg", alt: "Artwork 12" },
   { id: 113, src: "/Assets/Artwork/13.jpg", alt: "Artwork 13" },
   { id: 114, src: "/Assets/Artwork/14.jpg", alt: "Artwork 14" },
+  { id: 115, src: "/Assets/Artwork/15.jpg", alt: "Artwork 15" },
   { id: 116, src: "/Assets/Artwork/16.jpg", alt: "Artwork 16" },
   { id: 117, src: "/Assets/Artwork/17.jpg", alt: "Artwork 17" },
 ];
 
+/* ✅ Split Thumbnail Rows */
 const row1Images = portfolioImages.filter((_, i) => i % 3 === 0);
 const row2Images = portfolioImages.filter((_, i) => i % 3 === 1);
 const row3Images = portfolioImages.filter((_, i) => i % 3 === 2);
 
-/* Thumbnail Row */
+/* ✅ Marquee Props */
+interface MarqueeRowProps {
+  direction: "left" | "right";
+  images: ImageItem[];
+  isArtwork?: boolean;
+}
+
+/* ✅ Marquee Component */
 const MarqueeRow = ({
   direction,
   images,
   isArtwork = false,
-}: {
-  direction: "left" | "right";
-  images: any[];
-  isArtwork?: boolean;
-}) => {
+}: MarqueeRowProps) => {
   const animationClass =
     direction === "left"
       ? "animate-marquee-left-slow"
@@ -80,9 +93,10 @@ const MarqueeRow = ({
           <div
             key={`${image.id}-${index}`}
             className={`relative flex-shrink-0 rounded-xl overflow-hidden
-              ${isArtwork
-                ? "w-64 sm:w-72 md:w-80 aspect-square"
-                : "w-52 sm:w-60 md:w-68 lg:w-76 aspect-video"
+              ${
+                isArtwork
+                  ? "w-64 sm:w-72 md:w-80 aspect-square"
+                  : "w-52 sm:w-60 md:w-68 lg:w-76 aspect-video"
               }`}
             style={{
               boxShadow: "0 12px 40px -12px rgba(255,162,0,0.25)",
@@ -93,7 +107,9 @@ const MarqueeRow = ({
               alt={image.alt}
               fill
               sizes="(max-width:768px) 100vw, 400px"
-              className="object-contain bg-black"
+              className={`${
+                isArtwork ? "object-contain bg-black" : "object-cover"
+              }`}
               loading="lazy"
             />
           </div>
@@ -103,6 +119,7 @@ const MarqueeRow = ({
   );
 };
 
+/* ✅ Main Component */
 const FeaturedWork = () => {
   return (
     <section className="relative w-full py-16 md:py-20 bg-black overflow-hidden">
@@ -118,7 +135,7 @@ const FeaturedWork = () => {
           </p>
         </div>
 
-        {/* 3 Thumbnail Rows */}
+        {/* Thumbnail Rows */}
         <div className="space-y-4 mb-20">
           <MarqueeRow direction="left" images={row1Images} />
           <MarqueeRow direction="right" images={row2Images} />
@@ -138,12 +155,12 @@ const FeaturedWork = () => {
           </h3>
         </div>
 
-        {/* Artwork Row (Square Perfect Fit) */}
+        {/* Artwork Row */}
         <div className="mb-14">
           <MarqueeRow
             direction="right"
             images={artworkImages}
-            isArtwork={true}
+            isArtwork
           />
         </div>
 
