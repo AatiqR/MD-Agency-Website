@@ -6,16 +6,16 @@ import { useRef, useEffect, useState } from "react";
 
 const creators = [
   {
-    name: "Lewis Howes",
-    followers: "5M subscribers",
-    image: "/Assets/Youtuberclient/1.jpg",
-    link: "https://www.youtube.com/@lewishowes/videos", 
+    name: "Harun",
+    followers: "90K subscribers",
+    image: "/Assets/client/57.jpg",
+    link: "https://www.youtube.com/@Harunnawzadi/videos", 
   },
   {
-    name: "The Finest",
-    followers: "7.50M subscribers",
-    image: "/Assets/Youtuberclient/4.jpg",
-    link: "https://youtube.com/@TheFinestX/videos",
+    name: "Vincenzo's Plate",
+    followers: "1.60M subscribers",
+    image: "/Assets/client/66.jpg",
+    link: "https://youtube.com/@vincenzosplate/videos",
   },
   {
     name: "Dr. Adam Walker",
@@ -48,10 +48,10 @@ const creators = [
     link: "https://youtube.com/@_jared/videos",
   },
   {
-    name: "Daniel Pink",
-    followers: "32K subscribers",
-    image: "/Assets/Youtuberclient/7.jpg",
-    link: "https://youtube.com/@danielpinktv/videos",
+    name: "GodMasterPlays",
+    followers: "4K subscribers",
+    image: "/Assets/client/56.jpg",
+    link: "https://youtube.com/@GodMasterClash/videos",
   },
    {
     name: "HP Walking Tours",
@@ -67,10 +67,10 @@ const creators = [
   },
 
   {
-    name: "Mark Tilbury",
-    followers: "6.6M subscribers",
-    image: "/Assets/Youtuberclient/10.jpg",
-    link: "https://youtube.com/@marktilbury/videos",
+    name: "David Price",
+    followers: "7k subscribers",
+    image: "/Assets/client/52.jpg",
+    link: "https://youtube.com/@DavidPriceOfficial/videos",
   },
   {
     name: "Nour Art",
@@ -78,12 +78,12 @@ const creators = [
     image: "/Assets/Youtuberclient/17.jpg",
     link: "https://www.youtube.com/@NourArt2/videos",
   },
-   {
-    name: "Steve | Call to Leap",
-    followers: "470K subscribers",
-    image: "/Assets/Youtuberclient/11.jpg",
-    link: "https://youtube.com/@CalltoLeap/videos",
-  },
+  //  {
+  //   name: "Steve | Call to Leap",
+  //   followers: "470K subscribers",
+  //   image: "/Assets/Youtuberclient/11.jpg",
+  //   link: "https://youtube.com/@CalltoLeap/videos",
+  // },
     {
     name: "Evan Edinger",
     followers: "1.2M subscribers",
@@ -92,24 +92,18 @@ const creators = [
   },
    
     {
-    name: "Nischa",
-    followers: "2M subscribers",
-    image: "/Assets/Youtuberclient/12.jpg",
-    link: "https://youtube.com/@nischa/videos",
+    name: "Tiny Detour",
+    followers: "7k subscribers",
+    image: "/Assets/client/63.jpg",
+    link: "https://youtube.com/@tinydetour/videos",
   },
-    {
-    name: "COME ALONG",
-    followers: "2M subscribers",
-    image: "/Assets/Youtuberclient/9.jpg",
-    link: "https://youtube.com/@COMEALONG/videos",
-  },
+  //   {
+  //   name: "COME ALONG",
+  //   followers: "2M subscribers",
+  //   image: "/Assets/Youtuberclient/9.jpg",
+  //   link: "https://youtube.com/@COMEALONG/videos",
+  // },
 
-     {
-    name: "Sunny Lenarduzzi",
-    followers: "700K subscribers",
-    image: "/Assets/Youtuberclient/13.jpg",
-    link: "https://youtube.com/@SunnyLenarduzzi/videos",
-  },
 
 
 
