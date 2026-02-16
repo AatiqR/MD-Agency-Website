@@ -157,7 +157,7 @@ const avatars = [
 
 const navLinks = [
   { href: "#Services", label: "Services" },
-  { href: "#CaseStudies", label: "Case Studies" },
+  { href: "#Casestudy", label: "Case Studies" },
   { href: "#Contact", label: "Contact" },
   { href: "#Projects", label: "Projects" },
   { href: "#Reviews", label: "Reviews" },
@@ -233,8 +233,8 @@ export default function Home() {
         <Link href="#Services" className="font-bold text-black hover:text-[#ffa200] transition-colors">
           Services
         </Link>
-        <Link href="#CaseStudies" className="font-bold text-black hover:text-[#ffa200] transition-colors">
-          Case Studies
+        <Link href="#Casestudy" className="font-bold text-black hover:text-[#ffa200] transition-colors">
+          Case Study
         </Link>
         <Link href="#Contact" className="font-bold text-black hover:text-[#ffa200] transition-colors">
           Contact

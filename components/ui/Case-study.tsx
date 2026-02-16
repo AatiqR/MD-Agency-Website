@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 
 export default function EcommerceLandingPage() {
   return (
-  <div className="min-h-screen w-full rounded-4xl bg-gray-50">
+  <div id="Casestudy"
+   className="min-h-screen w-full rounded-4xl bg-gray-50">
 {/* 1st */}
 <div className="container mx-auto px-6 py-10 md:py-16">
   <h1 className="text-6xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight text-center">
@@ -291,7 +292,7 @@ export default function EcommerceLandingPage() {
 
         <div>
           <h3 className="text-xl md:text-2xl font-bold text-[#1A2238]">🚀 The Results</h3>
-          <p className="text-[#16a34a] font-semibold leading-relaxed">
+          <p className="text-[#ffa200] font-semibold leading-relaxed">
             ✅ 50% more client inquiries through the website <br />
             ✅ 600+ 5★ reviews showcased to boost credibility <br />
             ✅ Trusted by major brands like EMAAR, KPMG & Dubai Police
