@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"; // Correct import statement
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
