@@ -58,7 +58,7 @@ const artworkImages: ImageItem[] = [
   { id: 112, src: "/Assets/Artwork/12.jpg", alt: "Artwork 12" },
   { id: 113, src: "/Assets/Artwork/13.jpg", alt: "Artwork 13" },
   { id: 114, src: "/Assets/Artwork/14.jpg", alt: "Artwork 14" },
-  { id: 115, src: "/Assets/Artwork/15.jpg", alt: "Artwork 15" },
+
   { id: 116, src: "/Assets/Artwork/16.jpg", alt: "Artwork 16" },
   { id: 117, src: "/Assets/Artwork/17.jpg", alt: "Artwork 17" },
 ];

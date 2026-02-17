@@ -157,10 +157,10 @@ const avatars = [
 
 const navLinks = [
   { href: "#Services", label: "Services" },
-  { href: "#Casestudy", label: "Case Studies" },
-  { href: "#Contact", label: "Contact" },
   { href: "#Projects", label: "Projects" },
   { href: "#Reviews", label: "Reviews" },
+  { href: "#Casestudy", label: "Case Studies" },
+  { href: "#Contact", label: "Contact" },
 ];
 
 
@@ -233,11 +233,11 @@ export default function Home() {
         <Link href="#Services" className="font-bold text-black hover:text-[#ffa200] transition-colors">
           Services
         </Link>
-        <Link href="#Casestudy" className="font-bold text-black hover:text-[#ffa200] transition-colors">
-          Case Study
+        <Link href="#Projects" className="font-bold text-black hover:text-[#ffa200] transition-colors">
+          Projects
         </Link>
-        <Link href="#Contact" className="font-bold text-black hover:text-[#ffa200] transition-colors">
-          Contact
+        <Link href="#Reviews" className="font-bold text-black hover:text-[#ffa200] transition-colors">
+          Reviews
         </Link>
       </div>
 
@@ -248,11 +248,11 @@ export default function Home() {
 
       {/* Right Links */}
       <div className="hidden md:flex flex-1 justify-end gap-10 items-center">
-        <Link href="#Projects" className="font-bold text-black hover:text-[#ffa200] transition-colors">
-          Projects
+        <Link href="#Casestudy" className="font-bold text-black hover:text-[#ffa200] transition-colors">
+          Case Study
         </Link>
-        <Link href="#Reviews" className="font-bold text-black hover:text-[#ffa200] transition-colors">
-          Reviews
+        <Link href="#Contact" className="font-bold text-black hover:text-[#ffa200] transition-colors">
+          Contact
         </Link>
         <Button className="bg-[#ffa200] text-black font-extrabold px-6 sm:px-7 py-3 sm:py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
           Book a Call
