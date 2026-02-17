@@ -23,12 +23,12 @@ const creators = [
     image: "/Assets/Youtuberclient/3.jpg",
     link: "https://youtube.com/@closereadingpoetry/videos",
   },
-  {
-    name: "Codie Sanchez",
-    followers: "1.86M subscribers",
-    image: "/Assets/Youtuberclient/2.jpg",
-    link: "https://youtube.com/@CodieSanchezCT/videos",
-  },
+  // {
+  //   name: "Codie Sanchez",
+  //   followers: "1.86M subscribers",
+  //   image: "/Assets/Youtuberclient/2.jpg",
+  //   link: "https://youtube.com/@CodieSanchezCT/videos",
+  // },
   {
     name: "Deya",
     followers: "188K subscribers",
@@ -59,12 +59,12 @@ const creators = [
     image: "/Assets/Youtuberclient/15.jpg",
     link: "https://www.youtube.com/@HPWalkingTours/videos",
   },
-  {
-    name: "The Ultimate Discovery",
-    followers: "1.1M subscribers",
-    image: "/Assets/Youtuberclient/8.jpg",
-    link: "https://youtube.com/@ultimatediscovery/videos",
-  },
+  // {
+  //   name: "The Ultimate Discovery",
+  //   followers: "1.1M subscribers",
+  //   image: "/Assets/Youtuberclient/8.jpg",
+  //   link: "https://youtube.com/@ultimatediscovery/videos",
+  // },
 
   {
     name: "David Price",
@@ -84,12 +84,12 @@ const creators = [
   //   image: "/Assets/Youtuberclient/11.jpg",
   //   link: "https://youtube.com/@CalltoLeap/videos",
   // },
-    {
-    name: "Evan Edinger",
-    followers: "1.2M subscribers",
-    image: "/Assets/Youtuberclient/14.jpg",
-    link: "https://www.youtube.com/@evan/videos",
-  },
+  //   {
+  //   name: "Evan Edinger",
+  //   followers: "1.2M subscribers",
+  //   image: "/Assets/Youtuberclient/14.jpg",
+  //   link: "https://www.youtube.com/@evan/videos",
+  // },
    
     {
     name: "Tiny Detour",

@@ -254,7 +254,8 @@ export default function Home() {
         <Link href="#Contact" className="font-bold text-black hover:text-[#ffa200] transition-colors">
           Contact
         </Link>
-        <Button className="bg-[#ffa200] text-black font-extrabold px-6 sm:px-7 py-3 sm:py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+        <Button className="bg-[#ffa200] text-black font-extrabold px-6 sm:px-7 py-3 sm:py-4 rounded-2xl shadow-md hover:shadow-lg transition-all"
+        >
           Book a Call
         </Button>
       </div>
@@ -409,7 +410,7 @@ modern web development, and captivating design
     ))}
 
     <span className="text-gray-300 text-sm sm:text-base font-semibold tracking-wide">
-      <span className="text-[#ffa200] font-extrabold">Trusted</span> by 1000+  Creators, businesses, & brands worldwide
+      <span className="text-[#ffa200] font-extrabold">Trusted</span> by 100+ Creators, businesses, & brands worldwide
     </span>
   </div>
 
@@ -417,11 +418,11 @@ modern web development, and captivating design
   {/* Tagline */}
   <p className="mt-3 text-xs sm:text-sm md:text-base text-white font-medium max-w-xs sm:max-w-md">
     We help creators, {" "}
-    <span className="text-[#ffa200] font-semibold">brands</span>,{" "}
-    <span className="text-[#ffa200] font-semibold">agencies</span>,{" "}
-    <span className="text-[#ffa200] font-semibold">businesses</span>,{" "} scale with high-quality 
-    <span className="text-[#ffa200] font-semibold"> video editing</span>,{" "}
-    <span className="text-[#ffa200] font-semibold">web development</span> {" "}
+    <span className="text-[#fff200] font-semibold">brands</span>,{" "}
+    <span className="text-[#fff200] font-semibold">agencies</span>,{" "}
+    <span className="text-[#fff200] font-semibold">businesses</span>,{" "} scale with high-quality 
+    <span className="text-[#fff200] font-semibold"> video editing</span>,{" "}
+    <span className="text-[#fff200] font-semibold">web development</span> {" "}
     <span className="text-white font-semibold">and
 design solutions, delivered fast, clean, and stress free.
 </span> 
