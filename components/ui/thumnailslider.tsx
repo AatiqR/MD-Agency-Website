@@ -127,8 +127,8 @@ const FeaturedWork = () => {
 
         {/* Heading */}
         <div className="max-w-7xl mx-auto px-4 text-center mb-14">
-          <h2 className="text-5xl md:text-7xl font-black uppercase mb-4 text-white">
-            Featured Work
+          <h2 className="text-5xl md:text-7xl font-black uppercase mb-4 text-orange-400">
+            Click Magnet Thumbnails
           </h2>
           <p className="text-neutral-500 max-w-md mx-auto">
             Check out some of the projects we have done for our clients.

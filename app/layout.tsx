@@ -2,6 +2,8 @@ import type React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import FloatingWhatsApp from "@/components/ui/whatsapp";
+
 // import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -89,7 +91,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <SpeedInsights />
-
+<FloatingWhatsApp />
         {/* Optional Live Chat / Support Widget */}
         {/* 
         <Script
