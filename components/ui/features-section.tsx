@@ -14,7 +14,7 @@ export default function FeaturesSection() {
         {/* Heading Section */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
-            <span className="text-[#ffa200] drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">Benefits</span>
+            <span className="text-[#ffa200] drop-shadow-[0_0_10px_rgba(255,189,0,0.8)]">Benefits</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-300">
             What You Get By Working With Maz Digital

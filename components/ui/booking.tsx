@@ -22,13 +22,13 @@ export default function Booking() {
   return (
     <div id="booking" className="min-h-screen bg-black relative overflow-hidden">
       {/* 🔥 Animated Gradient Background */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-60 -right-60 w-[500px] h-[500px] bg-gradient-to-br from-[#ffa200]/30 via-[#ffa200]/25 to-[#ffa200]/20 rounded-full blur-[100px] animate-gradient-x"></div>
         <div className="absolute -bottom-60 -left-60 w-[600px] h-[600px] bg-gradient-to-tr from-[#ffa200]/35 via-[#ffa200]/30 to-[#ffa200]/25 rounded-full blur-[120px] animate-gradient-x delay-1000"></div>
-      </div>
+      </div> */}
 
       {/* Overlay grid effect */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(57,255,20,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(57,255,20,0.08)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      {/* <div className="absolute inset-0 bg-[linear-gradient(rgba(57,255,20,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(57,255,20,0.08)_1px,transparent_1px)] bg-[size:50px_50px]"></div> */}
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">

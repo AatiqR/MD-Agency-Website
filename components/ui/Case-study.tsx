@@ -20,7 +20,7 @@ export default function EcommerceLandingPage() {
     <h2 className="text-3xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight">
       <span className="text-[#ffa200]">GodMasterPlays</span>
       <br />
-      Building a Successful YouTube Channel in 7 Days
+    Successful YouTube Channel in 7 Days
     </h2>
   </div>
 
@@ -124,7 +124,7 @@ export default function EcommerceLandingPage() {
     <h1 className="text-3xl md:text-5xl font-extrabold text-[#1A2238] leading-tight tracking-tight">
       <span className="text-[#ffa200]">Noor-ul-Ain</span>
       <br />
-      Helping a Creator Find Her Voice (and Go Viral)
+      Helping a Creator Find Her Voice
     </h1>
   </div>
 

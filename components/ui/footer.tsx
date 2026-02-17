@@ -29,9 +29,9 @@ export default function Footer() {
     { name: "Instagram", icon: FaInstagram, url: "https://instagram.com/itxx_maz" },
     { name: "TikTok", icon: FaTiktok, url: "https://tiktok.com/@mazvideoediting" },
     { name: "Facebook", icon: FaFacebook, url: "https://facebook.com/abdullahsince1997" },
-    { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/yourusername" },
     { name: "LinkedIn", icon: FaLinkedin, url: "https://linkedin.com/in/malik-abdullah-zeeshan" },
     { name: "YouTube", icon: FaYoutube, url: "https://youtube.com/@MAZDigitalServices" },
+    // { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/yourusername" },
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-5 bg-gradient-to-br from-black/60 to-[#0c1f0c]/30 p-6 rounded-xl border border-gray-800/50 shadow-xl backdrop-blur-sm">
             <div className="flex items-center mb-5">
-              <div className="w-12 h-12 bg-[#ffa200] rounded-md flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(57,255,20,0.6)]">
+              <div className="w-12 h-12 bg-[#ffa200] rounded-md flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(255,189,0,0.6)]">
                 <span className="text-black font-bold text-4xl">M</span>
               </div>
               <h3 className="text-white text-2xl font-bold">Maz Digital</h3>
@@ -124,7 +124,7 @@ export default function Footer() {
               href="https://wa.me/+923055544729?text=Hi,%20I’d%20like%20to%20book%20a%20free%20consultation!"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between bg-[#ffa200] hover:bg-[#2cff0f] text-black font-semibold rounded-md px-5 py-3 transition-all duration-300 w-full mb-6 shadow-[0_0_20px_rgba(57,255,20,0.6)] hover:shadow-[0_0_25px_rgba(57,255,20,0.8)]"
+              className="group flex items-center justify-between bg-[#ffa200] hover:bg-[#2cff0f] text-black font-semibold rounded-md px-5 py-3 transition-all duration-300 w-full mb-6 shadow-[0_0_20px_rgba(255,189,0,0.6)] hover:shadow-[0_0_25px_rgba(57,255,20,0.8)]"
             >
               <span>Book a Free Consultation Call</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
