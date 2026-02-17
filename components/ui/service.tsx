@@ -201,11 +201,7 @@ export default function PricingSection() {
           ))}
         </div>
 
-        {/* Trust Section */}
-        <div className="mt-20 text-center text-gray-400 text-sm space-y-2">
-          <p>✔ Free Consultation • ✔ Flexible Payment Plans • ✔ First-Time Clients 15% Off</p>
-          <p>📧 Email: malik@mazdigital.me • 📱 WhatsApp: +92 305 5544729</p>
-        </div>
+    
 
       </div>
     </section>

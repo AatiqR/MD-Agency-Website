@@ -254,7 +254,13 @@ export default function Home() {
         <Link href="#Contact" className="font-bold text-black hover:text-[#ffa200] transition-colors">
           Contact
         </Link>
-        <Button className="bg-[#ffa200] text-black font-extrabold px-6 sm:px-7 py-3 sm:py-4 rounded-2xl shadow-md hover:shadow-lg transition-all"
+        <Button className="bg-[#ffa200] text-black font-extrabold px-6 sm:px-7 py-3 sm:py-4 rounded-2xl shadow-md  transition-all"
+            onClick={() => {
+      const bookingSection = document.getElementById("booking");
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
         >
           Book a Call
         </Button>
@@ -283,7 +289,14 @@ export default function Home() {
               {link.label}
             </Link>
           ))}
-          <Button className="w-full bg-[#ffa200] text-black font-extrabold px-8 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
+          <Button className="w-full bg-[#ffa200] text-black font-extrabold px-8 py-4 rounded-2xl shadow-md transition-all"
+              onClick={() => {
+      const bookingSection = document.getElementById("booking");
+      if (bookingSection) {
+        bookingSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
+          >
             Book a Call
           </Button>
         </div>
@@ -342,18 +355,21 @@ modern web development, and captivating design
             
 
          <div className="flex flex-col items-center justify-center pt-2 sm:pt-0 md:pt-0 relative z-10">
-  <Button
-    size="lg"
-    className="relative w-[90%] sm:w-auto text-lg sm:text-lg md:text-xl py-7 sm:py-7 md:py-8 px-10 sm:px-10 md:px-12 text-black bg-[#ffa200] border-none rounded-xl sm:rounded-lg shadow-lg hover:shadow-[0_0_30px_rgba(0,255,89,0.6)] transition-all duration-300 ease-in-out hover:bg-[#00dd4f] active:translate-y-1 font-bold"
-    onClick={() => {
-      const bookingSection = document.getElementById("booking");
-      if (bookingSection) {
-        bookingSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }}
-  >
-    Get a Free Consultation
-  </Button>
+ <Button
+ onClick={() => {
+    window.open("https://wa.me/923055544729?text=Hi,%20I%20would%20like%20a%20talk%20", "_blank");
+  }}
+  className="relative w-[90%] sm:w-auto text-lg sm:text-lg md:text-xl py-7 sm:py-7 md:py-8 px-10 sm:px-10 md:px-12
+             text-black bg-[#FFA200] border-none rounded-xl sm:rounded-lg shadow-lg
+             hover:shadow-[0_0_30px_rgba(255,162,0,0.6)] transition-all duration-300 ease-in-out
+             hover:bg-[#00dd4f] active:translate-y-1 font-bold text-center mx-auto"
+>
+Talk on Whatsapp
+ 
+
+</Button>
+
+  
 </div>
 
           </div>

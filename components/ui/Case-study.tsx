@@ -105,7 +105,11 @@ export default function EcommerceLandingPage() {
 
       {/* Call to Action */}
       <div className="pt-5">
-        <Button className="bg-[#1A2238] hover:bg-[#1A2238]/90 text-white rounded-full px-8 py-5 text-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl">
+        <Button className="bg-[#1A2238] hover:bg-[#1A2238]/90 text-white rounded-full px-8 py-5 text-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl"
+         onClick={() => {
+    window.open("https://wa.me/923055544729?text=Hi,%20I%20would%20like%20a%20youtube%20channel%20service", "_blank");
+  }}
+        >
           Start Your Channel Growth
         </Button>
       </div>
@@ -132,33 +136,34 @@ export default function EcommerceLandingPage() {
   <div className="grid gap-5 md:grid-cols-2 md:gap-16 items-start">
     
     {/* Left side with TWO images */}
-    <div className="grid grid-cols-2 gap-6 h-[520px] md:h-[480px]">
-      
-      <div className="rounded-2xl overflow-hidden">
-        <Image
-          src="/Assets/project/ins.jpg"
-          width={600}
-          height={700}
-          alt="Noor Instagram Case Study 1"
-          className="w-full h-full object-contain rounded-4xl transition-transform duration-300 hover:scale-110"
-          priority
-          unoptimized
-        />
-      </div>
+   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full max-w-5xl mx-auto">
+  
+  {/* Image 1 */}
+  <div className="relative w-full aspect-[434/512] rounded-2xl overflow-hidden bg-white">
+    <Image
+      src="/Assets/project/ins.jpg"
+      alt="Noor Instagram Case Study 1"
+      fill
+      sizes="(max-width: 640px) 100vw, 50vw"
+      className="object-contain transition-transform duration-300 hover:scale-105"
+      priority
+    />
+  </div>
 
-      <div className="rounded-4xl overflow-hidden">
-        <Image
-          src="/Assets/project/ins2.jpg"
-          width={600}
-          height={700}
-          alt="Noor Instagram Case Study 2"
-          className="w-full h-full object-contain rounded-4xl transition-transform duration-300 hover:scale-110"
-          priority
-          unoptimized
-        />
-      </div>
+  {/* Image 2 */}
+  <div className="relative w-full aspect-[434/512] rounded-2xl overflow-hidden bg-white">
+    <Image
+      src="/Assets/project/ins2.jpg"
+      alt="Noor Instagram Case Study 2"
+      fill
+      sizes="(max-width: 640px) 100vw, 50vw"
+      className="object-contain transition-transform duration-300 hover:scale-105"
+      priority
+    />
+  </div>
 
-    </div>
+</div>
+
 
     {/* Right side with content */}
    {/* Right side with content */}
@@ -226,7 +231,11 @@ export default function EcommerceLandingPage() {
 
   {/* Call to Action */}
   <div className="pt-5">
-    <Button className="bg-[#1A2238] hover:bg-[#1A2238]/90 text-white rounded-full px-8 py-5 text-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl">
+    <Button className="bg-[#1A2238] hover:bg-[#1A2238]/90 text-white rounded-full px-8 py-5 text-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl"
+           onClick={() => {
+    window.open("https://wa.me/923055544729?text=Hi,%20I%20would%20like%20a%20personal%20brand%20service", "_blank");
+  }}
+    >
       Grow Your Personal Brand
     </Button>
   </div>
@@ -325,7 +334,11 @@ export default function EcommerceLandingPage() {
 
       {/* Call to Action */}
       <div className="pt-5">
-        <Button className="bg-[#1A2238] hover:bg-[#1A2238]/90 text-white rounded-full px-8 py-5 text-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl">
+        <Button 
+               onClick={() => {
+    window.open("https://wa.me/923055544729?text=Hi,%20I%20would%20like%20a%20Website%20Service", "_blank");
+  }}
+        className="bg-[#1A2238] hover:bg-[#1A2238]/90 text-white rounded-full px-8 py-5 text-lg font-semibold shadow-lg transition-all duration-300 hover:shadow-xl">
           Start My Transformation
         </Button>
       </div>
