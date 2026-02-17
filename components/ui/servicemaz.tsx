@@ -13,33 +13,33 @@ const services = [
     number: "01",
     title: "Video Editing",
     description:
-      "High-retention, scroll-stopping video edits crafted to boost watch time, increase engagement, and turn casual viewers into loyal followers and paying clients."
+      "High-retention, scroll-stopping video edits crafted to boost watch time, increase engagement, and turn casual viewers into loyal followers and paying clients.",
   },
   {
     number: "02",
     title: "Graphic Designing",
     description:
-      "Visually striking designs and click-magnet thumbnails built to grab attention instantly, strengthen brand identity, and drive more clicks across platforms."
+      "Visually striking designs and click-magnet thumbnails built to grab attention instantly, strengthen brand identity, and drive more clicks across platforms.",
   },
   {
     number: "03",
     title: "Website Development",
     description:
-      "Fast, modern, conversion-focused websites designed to load quickly, build trust, and convert visitors into leads, bookings, and customers."
+      "Fast, modern, conversion-focused websites designed to load quickly, build trust, and convert visitors into leads, bookings, and customers.",
   },
   {
     number: "04",
     title: "Social Media Management",
     description:
-      "Strategic content planning, posting, and optimization to grow reach, maintain consistency, and turn social media presence into real business growth."
-  }
+      "Strategic content planning, posting, and optimization to grow reach, maintain consistency, and turn social media presence into real business growth.",
+  },
 ];
 
-// Apple / Linear-style easing
-const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
+/* Faster, smooth premium easing */
+const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 /* -------------------------------------------------
-   Animated service row
+   Animated service row (COMING FROM TOP)
 -------------------------------------------------- */
 function ServiceRow({
   service,
@@ -50,28 +50,30 @@ function ServiceRow({
   index: number;
   scrollYProgress: MotionValue<number>;
 }) {
-  const rowX = useTransform(
-    scrollYProgress,
-    [0.3 + index * 0.12, 0.5 + index * 0.12],
-    [-160, 0]
-  );
-
+  /* 🔥 Coming from TOP instead of left */
   const rowY = useTransform(
     scrollYProgress,
-    [0.3 + index * 0.12, 0.5 + index * 0.12],
-    [80, 0]
+    [0.25 + index * 0.1, 0.4 + index * 0.1],
+    [-120, 0] // 🔥 top → natural drop
   );
 
   const rowOpacity = useTransform(
     scrollYProgress,
-    [0.28 + index * 0.12, 0.38 + index * 0.12],
+    [0.22 + index * 0.1, 0.32 + index * 0.1],
     [0, 1]
+  );
+
+  const rowScale = useTransform(
+    scrollYProgress,
+    [0.25 + index * 0.1, 0.4 + index * 0.1],
+    [0.96, 1]
   );
 
   return (
     <motion.div
-    id="Services"
-      style={{ x: rowX, y: rowY, opacity: rowOpacity }}
+      id="Services"
+      style={{ y: rowY, opacity: rowOpacity, scale: rowScale }}
+      transition={{ duration: 0.8, ease: EASE }} // 🔥 slightly faster
       className="flex items-start gap-8 md:gap-20
                  py-20 border-b border-black/15
                  last:border-b-0 w-full"
@@ -115,24 +117,24 @@ export default function Services() {
     offset: ["start end", "end start"],
   });
 
-  // Section reveal
-  const sectionY = useTransform(scrollYProgress, [0, 0.2], [180, 0]);
+  /* 🔥 Section reveal from TOP (faster) */
+  const sectionY = useTransform(scrollYProgress, [0, 0.18], [-120, 0]);
   const sectionOpacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
-  // Center SERVICES word motion
-  const centerScale = useTransform(scrollYProgress, [0.15, 0.4], [0.85, 1]);
+  /* Background SERVICES motion */
+  const centerScale = useTransform(scrollYProgress, [0.15, 0.4], [0.9, 1]);
   const centerOpacity = useTransform(scrollYProgress, [0.15, 0.35], [0, 0.08]);
 
   return (
     <section ref={ref} className="relative w-full bg-black overflow-hidden">
       <motion.div
         style={{ y: sectionY, opacity: sectionOpacity }}
-        transition={{ duration: 1.3, ease: EASE }}
+        transition={{ duration: 0.9, ease: EASE }} // 🔥 faster than before
         className="relative w-full bg-white
                    rounded-t-[64px] md:rounded-t-[96px]
                    px-6 md:px-20 pt-32 pb-32"
       >
-        {/* Center giant SERVICES word */}
+        {/* Giant background word */}
         <motion.div
           style={{ scale: centerScale, opacity: centerOpacity }}
           className="pointer-events-none absolute inset-0
@@ -147,20 +149,16 @@ export default function Services() {
           </h1>
         </motion.div>
 
-        {/* Actual heading */}
+        {/* Heading */}
         <motion.h2
-          initial={{ x: 0, opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ y: -60, opacity: 0 }} // 🔥 from top
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: EASE }}
-          className="
-            relative z-10
-            mx-auto text-center
-            w-fit
-            text-[clamp(3.5rem,8vw,7rem)]
-            font-black uppercase tracking-tight
-            mb-28 text-black
-          "
+          transition={{ duration: 0.8, ease: EASE }}
+          className="relative z-10 mx-auto text-center w-fit
+                     text-[clamp(3.5rem,8vw,7rem)]
+                     font-black uppercase tracking-tight
+                     mb-28 text-black"
         >
           Services
         </motion.h2>
